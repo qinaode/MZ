@@ -1,0 +1,174 @@
+@charset "utf-8";
+/* Public CSS Document */
+body html{width: 100%;height: 100%;}
+/*html {min-height:101%;}*/
+a{cursor: pointer;}
+body {background: none repeat scroll 0 0 #fff;font: 12px/1.5 arial,宋体;color: #333333;}
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, address, big, cite, code, del, em, font, img, ins, small, strong, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,th,td {
+	margin: 0;
+	padding: 0;
+	font-family:微软雅黑;
+}
+ul,li{list-style: none;}
+fieldset,img{border:0}
+h3{font-size:14px;}
+.dis{display:block;}
+.undis{display:none;}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.cl{
+	clear:both;
+	float: left;
+	width: 765px;
+}
+.text-center
+{
+   text-align: center;
+    }
+.fb{font-weight:bold;}
+.mc{overflow:hidden;}
+a{text-decoration:none;}
+a:link,a:visited{color:#3F3F3F;}
+a:hover{
+	color:#FF7300;
+	text-decoration:underline;
+}
+select,input,img,{vertical-align:middle;}
+.marginright10{ margin-right:10px;}
+
+/*颜色自定义*/
+.white,a.white:link,a.white:visited{color:#FFF;}
+.red,a.red:link,a.red:visited{color:#C00;}
+.yellow,a.yellow:link,a.yellow:visited{color:#ffaa00;}
+.purple,a.purple:link,a.purple:visited{color:#bd52de;}
+.rosiness,a.rosiness:link,a.rosiness:visited{color:#ff41c7;}
+.lightblue,a.lightblue:link,a.lightblue:visited{color:#03C}
+.green,a.green:link,a.green:visited{color:#090}
+.gray,a.gray:link,a.gray:visited{color:#CCC}
+
+/*字体定义*/
+.fB13{
+	font-size:13px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+.fB14{font-size:14px; }
+.fB16{font-size:16px; }
+
+
+.tableform td{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #F7DAF0;
+	line-height: 22px;
+}
+
+.tableform .userList
+{
+    font-weight:bold;
+    font-size:14px;
+    background-color: #F8F7EF;
+    }
+    
+    .tableform .nodeList:hover
+{
+    background:#F8F7EF;
+       
+    }
+
+#bkcolor {
+	background-color: #FAF2FB;
+}
+
+
+/*其它*/
+.cont .marketList .mCont .userList {
+	float: right;
+	width: 253px;
+	padding: 5px;
+	border: 1px solid #CCC;
+	margin-top: 8px;
+}
+.cont .circleCont .created #createdBt {
+	clear: both;
+	background-image: url(../images/commune/createdBtBl.jpg);
+	background-repeat: repeat-x;
+	height: 56px;
+	width: 200px;
+	line-height: 50px;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	text-align: center;
+	color: #FFF;
+	font-weight: 300;
+	margin-left: 10px;
+}
+.cont .circleCont .created #limited {
+	padding-left: 8px;
+	line-height: 25px;
+}
+.cont .circleCont .created #limited #countWord {
+	color: #C00;
+	font-size: 16px;
+	font-family: "微软雅黑";
+}
+.cont .pdMain .pdCont {
+	clear: both;
+	padding-top: 15px;
+}
+.cont .pdMain .pdCont .cLab {
+	line-height: 35px;
+	background-color: #EEF7EE;
+	overflow: hidden;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #CCC;
+}
+.cont .pdMain .pdCont .cLab li {
+	float: left;
+	text-align: center;
+	padding-right: 5px;
+	padding-left: 5px;
+	width: 120px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #CCC;
+	cursor: pointer;
+}
+.cont .pdMain .pdCont .cCont {
+	clear: both;
+	overflow: hidden;
+}
+.cont .pdMain .pdCont .cCont .productDetail.comming.current .pageInfo {
+	margin: 5px;
+	clear: both;
+	float: right;
+	width: 300px;
+}
+.cont .pdMain .pdCont .cCont .productDetail.comming.current .pageInfo li {
+	margin-right: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+	float: left;
+	border: 1px solid #CCC;
+	line-height: 28px;
+}
+.loginMain #sumbitA dt {
+	line-height: 40px;
+}
+.copyright {
+	height: 80px;
+	color: #F7F7F7;
+	padding-left: 10px;
+}
+.loginMain #sumbitA dd #varCode {
+	height: 22px;
+	width: 50px;
+	float: left;
+}

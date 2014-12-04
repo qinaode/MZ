@@ -1,0 +1,93 @@
+.content {
+	padding: 5px;
+	overflow: hidden;
+	min-width:1000px;
+}
+.content .pagePath {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #7CCF8F;
+	line-height: 30px;
+	text-indent: 15px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	background-color: #ECF5FA;
+}.content .searchform {
+	line-height: 30px;
+	background-color: #F9FCFD;
+	margin-top: 2px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #7CCF8F;
+}
+.content .pageInfo {
+	line-height: 30px;
+	background-color: #F9FCFD;
+	margin-top: 8px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #7CCF8F;
+	overflow: hidden;
+	clear: both;
+}
+.content .pageInfo .pno {
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-right: 5px;
+	border: 1px solid #CCC;
+}
+.content .userInfo li {
+	float: left;
+	width: 400px;
+	border: 1px solid #BDE6BF;
+	margin-top: 10px;
+	margin-right: 10px;
+	font-family: "微软雅黑";
+	background-color: #F9FCFD;
+	height: 220px;
+}
+.content .userInfo li .mainPic {
+	padding: 10px;
+	width: 180px;
+	float: left;
+}
+.content .userInfo li .mainPic .name {
+	text-align: center;
+	line-height: 25px;
+}
+.content .userInfo li .workInfo {
+	float: left;
+	width: 190px;
+	margin-top: 10px;
+}
+.content .userInfo li .workInfo #account {
+	font-size: 16px;
+	color: #090;
+}
+.content .userInfo li .workInfo .level {
+	font-size: 18px;
+	color: #C00;
+	line-height: 30px;
+}
+.content .userInfo {
+	overflow: hidden;
+}
+.content .userInfo li .workInfo #identity {
+	line-height: 28px;
+}
+.content .userInfo li .workInfo .name {
+	line-height: 30px;
+	border-top-width: 1px;
+	border-top-style: dashed;
+	border-top-color: #999;
+}
+.content .userInfo li .workInfo .services {
+	height: 30px;
+}
+.content .sort {
+	line-height: 30px;
+	background-color: #F9FCFD;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #7CCF8F;
+}

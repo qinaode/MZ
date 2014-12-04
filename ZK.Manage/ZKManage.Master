@@ -1,0 +1,189 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ZKManage.master.cs" Inherits="ZK.Manage.ZKManage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>
+        <asp:ContentPlaceHolder ID="rphTitle" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+    <script type="text/javascript" src="/commonjs/lhgdialog/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="/commonjs/lhgdialog/lhgdialog.min.js?skin=iblack"></script>
+    <script src="/inc/tab.js" language="javascript" type="text/javascript"></script>
+    <script type="text/javascript" src="/inc/addressselect.js"></script>
+    <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/top.css" />
+    <asp:ContentPlaceHolder ID="cphJs" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .top .menuSec_bak .menuSec .msli.current .menuSec_c .msl_c
+        {
+            float: left;
+            margin-right: 10px;
+            margin-left: 10px;
+            width: 80px;
+            text-align: center;
+            padding-top: 5px;
+            border: 1px solid #062B4F;
+            padding-bottom: 3px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="menuTop">
+            <div class="logo">
+                <a href="/Default.aspx">
+                    <img src="/image/logo_s.jpg" width="120" height="39" /></a></div>
+            <div class="userInfo">
+                你好，<%=Request.Cookies["SysUserName"].Value %>! [<a href="/loginOut.ashx">退出系统</a>]
+            </div>
+            <ul class="menuLi">
+                <li class="mtli <%if(curpage=="system" || curpage==null){ %>current<%} %>">基础信息管理</li>
+                <%--      <li class="mtli <%if(curpage=="product"){ %>current<%} %>">临时</li>--%>
+                <li class="mtli <%if(curpage=="teach"){ %>current<%} %>">教学频道管理</li>
+                <li class="mtli <%if(curpage=="moral"){ %>current<%} %>">德育频道管理</li>
+                <li class="mtli <%if(curpage=="administration"){ %>current<%} %>">行政频道管理</li>
+                <li class="mtli <%if(curpage=="notice"){ %>current<%} %>">系统公告管理</li>
+                <li class="mtli <%if(curpage=="disk"){ %>current<%} %>">系统配置管理</li>
+                <li class="mtli <%if(curpage=="topic"){ %>current<%} %>">精彩专题管理</li>
+            </ul>
+        </div>
+        <div class="menuSec_bak">
+            <ul class="menuSec">
+                <li class="msli <%if(curpage=="system"  || curpage==null){ %>current<%} %>">
+                    <ul class="menuSec_c">
+                        <li class="msl_c"><a href="/BasicInfo/UserManager.aspx?curp=system">
+                            <img src="/image/erp-addadmin.png" width="36" height="36" /><br />
+                            系统用户管理</a></li>
+                        <%--                   <li class="msl_c"><a href="/BasicInfo/UserManagerAdd.aspx?curp=system">
+                            <img src="/image/erp-admin.png" width="36" height="36" /><br />
+                            添加用户</a></li>--%>
+                        <li class="msl_c"><a href="/BasicInfo/OrgManager.aspx?curp=system">
+                            <img src="/image/erp-collect.png" width="36" height="36" /><br />
+                            组织机构管理</a></li>
+                        <li class="msl_c"><a href="/BasicInfo/OrgAndUserSetting.aspx?curp=system">
+                            <img src="/image/erp-collect.png" width="36" height="36" /><br />
+                            组织用户配置</a></li>
+                        <li class="msl_c"><a href="/BasicInfo/GroupManager.aspx?curp=system">
+                            <img src="/image/erp-jms.png" width="36" height="36" /><br />
+                            群组管理</a></li>
+                        <li class="msl_c"><a href="/SettingManage/RoleManage.aspx?curp=system">
+                            <img src="/image/erp-fp.png" width="36" height="36" /><br />
+                            角色管理</a> </li>
+                        <%-- <li class="msl_c"><a href="#neo">
+                            <img src="/image/erp-leaveword.png" width="36" height="36" /><br />
+                            添加角色</a><div id="unopend">
+                            </div>
+                        </li>--%>
+                    </ul>
+                </li>
+                <li class="msli <%if(curpage=="teach"){ %>current<%} %>">
+                    <ul class="menuSec_c">
+                        <li class="msl_c"><a href="../TeachChannelManage/CourseManage.aspx?curp=teach">
+                            <img src="/image/erp-cai.png" width="36" height="36" /><br />
+                            教材管理</a> </li>
+                        <li class="msl_c"><a href="../TeachChannelManage/gradeManage.aspx?curp=teach">
+                            <img src="/image/erp-jy.png" width="36" height="36" /><br />
+                            年级管理</a> </li>
+                        <li class="msl_c"><a href="../TeachChannelManage/editionManage.aspx?curp=teach">
+                            <img src="/image/erp-fp.png" width="36" height="36" /><br />
+                            版本管理</a> </li>
+                        <%-- <li class="msl_c"><a href="../TeachChannelManage/lessonManage.aspx?curp=teach">
+                            <img src="/image/erp-zptx.png" width="36" height="36" /><br />
+                            课程管理</a> </li>--%>
+                        <li class="msl_c"><a href="../TeachChannelManage/LessionMagNew.aspx?curp=teach">
+                            <img src="/image/erp-zptx.png" width="36" height="36" /><br />
+                            课程管理</a> </li>
+                        <li class="msl_c"><a href="../TeachChannelManage/teachresourceManage.aspx?curp=teach">
+                            <img src="/image/erp-pass.png" width="36" height="36" /><br />
+                            教学资源管理</a> </li>
+                    </ul>
+                </li>
+                <li class="msli <%if(curpage=="moral"){ %>current<%} %>">
+                    <ul class="menuSec_c">
+                        <li class="msl_c"><a href="/MoralManagement/MoralManagementCategory.aspx?curp=moral">
+                            <img src="/image/erp-jms.png" width="36" height="36" /><br />
+                            德育分类管理</a></li>
+                        <li class="msl_c"><a href="/MoralManagement/ManagementPpt.aspx?curp=moral">
+                            <img src="/image/erp-pic.png" width="36" height="36" /><br />
+                            幻灯管理</a></li>
+                        <li class="msl_c"><a href="/MoralManagement/MoralResourceManage.aspx?curp=moral">
+                            <img src="/image/erp-addadmin.png" width="36" height="36" /><br />
+                            德育资源管理</a></li>
+                    </ul>
+                </li>
+                <li class="msli <%if(curpage=="administration"){ %>current<%} %>">
+                    <ul class="menuSec_c">
+                        <li class="msl_c"><a href="/AdministrativeManagement/AdministrativeManageCategory.aspx?curp=administration">
+                            <img src="/image/erp-fp.png" width="36" height="36" /><br />
+                            行政分类管理</a></li>
+                        <li class="msl_c"><a href="/AdministrativeManagement/AdministartorResourceManage.aspx?curp=administration">
+                            <img src="/image/purchasematch.png" width="36" height="36" /><br />
+                            行政资源管理</a></li>
+                    </ul>
+                </li>
+                <li class="msli <%if(curpage=="notice"){ %>current<%} %>">
+                    <ul class="menuSec_c">
+                        <li class="msl_c"><a href="/SystemMsg/MsgManager.aspx?curp=notice">
+                            <img src="/image/erp-addadmin.png" width="36" height="36" /><br />
+                            公告管理</a></li>
+                             <li class="msl_c"><a href="/SystemMsg/MsgManagerNew.aspx?curp=notice">
+                            <img src="/image/erp-addadmin.png" width="36" height="36" /><br />
+                            公告管理</a></li>
+                        <%--                        <li class="msl_c"><a href="/SystemMsg/MsgClassManager.aspx?curp=notice">
+                            <img src="/image/erp-leaveword.png" width="36" height="36" /><br />
+                            公告分类管理</a></li>--%>
+                        <li class="msl_c"><a href="/SystemMsg/AddSysNotice.aspx?curp=notice">
+                            <img src="/image/erp-addadmin.png" width="36" height="36" /><br />
+                            添加公告</a></li>
+                    </ul>
+                </li>
+                <li class="msli <%if(curpage=="disk"){ %>current<%} %>">
+                    <ul class="menuSec_c">
+                        <li class="msl_c"><a href="/SystemMsg/AppManager.aspx?curp=disk">
+                            <img src="/image/erp-jms.png" width="36" height="36" /><br />
+                            应用管理</a> </li>
+                        <%-- <li class="msl_c"><a href="/SystemMsg/AppManagerEdit.aspx?curp=disk">
+                            <img src="/image/erp-leaveword.png" width="36" height="36" /><br />
+                            添加应用</a> </li>--%>
+                        <li class="msl_c"><a href="/SettingManage/AdminManage.aspx?curp=disk">
+                            <img src="/image/erp-addadmin.png" width="36" height="36" /><br />
+                            管理员管理</a></li>
+                        <li class="msl_c"><a href="/SettingManage/SystemSeting.aspx?curp=disk">
+                            <img src="/image/erp-admin.png" width="36" height="36" /><br />
+                            系统参数配置</a></li>
+                        <%--<li class="msl_c"><a href="#neo">
+                            <img src="/image/erp-fp.png" width="36" height="36" /><br />
+                            网盘配额管理</a><div id="unopend">
+                            </div>
+                        </li>--%>
+                        <li class="msl_c"><a href="#neo">
+                            <img src="/image/erp-fp.png" width="36" height="36" /><br />
+                            磁盘管理</a><div id="unopend">
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="msli <%if(curpage=="topic"){ %>current<%} %>">
+                    <ul class="menuSec_c">
+                        <li class="msl_c"><a href="/SpecialTopic/SpecialTopicMag.aspx?curp=topic">
+                            <img src="/image/erp-pic.png" width="36" height="36" /><br />
+                            专题管理</a></li>
+                        <%-- <li class="msl_c"><a href="/SpecialTopic/SpecialTopicMag.aspx?curp=topic">
+                           <img src="/image/erp-addadmin.png" width="36" height="36" /><br />
+                            专题资源管理</a></li>  --%>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <asp:ContentPlaceHolder ID="cphContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <div class="footer">
+        Copyright © 2012-2016 智客教育 All Rights Reserved.
+    </div>
+</body>
+</html>

@@ -1,0 +1,164 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ZK.master.cs" Inherits="ZK.MVCWeb.Views.Shared.ZK" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="title" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+    <link href="/CSS/index.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/Scripts/jquery.1.9.0.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+        #nav
+        {
+            background-color: red;
+        }
+        .fo
+        {
+            float: left;
+        }
+    </style>
+    <script type="text/javascript">
+
+        //        function useradmin() {
+        //            var useradmin = $("#useradmin").html();
+        //            if (useradmin) {
+        //                $("#useradmin").html("<a href='/nbc_schoolyard/index.php/admin' target='new'>进入后台</a>");
+        //                $("#useradmin").attr("style", "margin-left:20px;")
+        //            }
+        //        }
+        window.file_type = "";
+        window.keyword = "";
+        window.channel = "";
+
+        function gotourl(id) {
+            $('ul').find('li').css('background', 'url(/IMAGES/ul-bg.jpg)');
+            if (id == '1') {
+                $('#zsindex').attr('style', 'background-color:#014F99;');
+                $('#ifr_a').get(0).src = '/nbc_schoolyard/index.php/page/main';
+            } else if (id == '2') {
+                $('#dy').attr('style', 'background-color:#014F99;');
+                $('#ifr_a').get(0).src = '/nbc_schoolyard/index.php/page/moral';
+            } else if (id == '5') {
+                $('#xz').attr('style', 'background-color:#014F99;');
+                $('#ifr_a').get(0).src = '/nbc_schoolyard/index.php/page/administration';
+            } else if (id == '6') {
+                $('#mywjg').attr('style', 'background-color:#014F99;');
+                $('#ifr_a').get(0).src = '/';
+            } else if (id == '3') {
+                $('#jx').attr('style', 'background-color:#014F99;');
+                $('#ifr_a').get(0).src = '/nbc_schoolyard/index.php/page/teach';
+                //$('#ifr_a').get(0).src = '/nbc_schoolyard/index.php/search/?keyword=aaa&file_type=aaaa';
+            } else if (id == '7') {
+                $('ul').find('li').css('background', 'url(IMAGES/ul-bg.jpg)');
+                $('#ifr_a').get(0).src = "../../fastmsg/admin/pages/userinfo.php?userid={$sess['authId']}&username={$sess['authName']}";
+            }
+        }
+
+        function filetype(file_type) {
+            if (file_type == "1") {
+                $("#all").css("color", "#0288D1");
+                $("#tupian").css("color", "#0288D1");
+                $("#shipin").css("color", "#0288D1");
+                $("#wendang").css("color", "#000");
+
+            } else if (file_type == "3") {
+                $("#wendang").css("color", "#0288D1");
+                $("#all").css("color", "#0288D1");
+                $("#shipin").css("color", "#0288D1");
+                $("#tupian").css("color", "#000");
+            } else if (file_type == "2") {
+                $("#wendang").css("color", "#0288D1");
+                $("#tupian").css("color", "#0288D1");
+                $("#all").css("color", "#0288D1");
+                $("#shipin").attr("style", "color:#000;");
+            } else {
+                file_type = null
+                $("#wendang").css("color", "#0288D1");
+                $("#tupian").css("color", "#0288D1");
+                $("#shipin").css("color", "#0288D1");
+                $("#all").css("color", "#000");
+            }
+            window.file_type = file_type;
+        }
+
+        function search() {
+            var keyword = $("#keyword").val();
+            window.keyword = keyword;
+            keyword = keyword.replace(/^ +/, '');
+            keyword = keyword.replace(/ +$/, ''); //去掉keyword左右的空格
+            $.ajax({
+                                url: "/nbc_schoolyard/index.php/search",
+                //                url: "../Views/Search/Index.aspx",
+//                url: "/Search/Index",
+                type: "POST",
+                data: { file_type: file_type, keyword: keyword },
+                dataType: "text",
+                success: function (data) {
+                    alert(data);
+                    $('#ifr_a').get(0).src = data;
+                    $("#d1").html(data.toString());
+                }
+            })
+        }
+
+        function getCateType(id) {
+            window.location = "/Search/Index?id=" + id + "&catetype=Master";  
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body <%--onload="useradmin()"--%>>
+    <form id="form1" runat="server">
+    <div class="warp">
+        <div class="head">
+            <div class="left-head">
+                <img src="" width="256px" height="97px" />
+            </div>
+            <div class="right-head">
+                <p class="title">
+                    <span id="Total" onclick="getCateType(this.id);" style="cursor: pointer; font-weight: 700;">
+                        <a  id="all">全部知识</a> </span>
+                    <span id="Doc" class="blue" onclick="getCateType(this.id);" style="cursor: pointer; font-weight: 700;">
+                        <a id="wendang">文档</a> </span>
+                    <span id="Img" class="blue" onclick="getCateType(this.id);"  style="cursor: pointer; font-weight: 700;">
+                        <a id="tupian">图片</a></span>
+                    <span id="Vedio" class="blue" onclick="getCateType(this.id);" style="cursor: pointer; font-weight: 700;">
+                        <a id="shipin">视频</a></span>
+                </p>
+                <div style="float: right; margin-right: 30px; margin-top: -25px;">
+                    欢迎您：<a style="cursor: pointer;" onclick="gotourl(7)">{$sess['authName']}</a><span
+                        id="useradmin" style="display: none;">{$sess['useradmin']}</span><span style="margin-left: 20px;"></span><a
+                            style="cursor: pointer;" href="/nbc_schoolyard/index.php/login/logout">退出</a></div>
+                <div class="find">
+                    <input type="text" id="keyword" />
+                    <p class="work" onclick="search()" style="cursor: pointer; margin-top: 0px">
+                        搜索文档</p>
+                    <!-- <p class="help" style="cursor:pointer">帮助</p> -->
+                </div>
+            </div>
+        </div>
+        <ul class="nav" style="padding: 0px;">
+            <li id='zsindex' onclick='channelType(1)' class="cur"><a href="/" style="cursor: pointer">
+                知识首页</a><span><img src="/IMAGES/shu.jpg" /></span></li>
+            <li id='jx' onclick='channelType(3)'><a href="/Teach/" style="cursor: pointer">教学资源</a><span><img
+                src="/IMAGES/shu.jpg" /></span></li>
+            <li id='dy' onclick='channelType(2)'><a href="/Moral/" style="cursor: pointer">德育资源</a><span><img
+                src="/IMAGES/shu.jpg" /></span></li>
+            <li id='xz' onclick='channelType(5)'><a href="/Administration/" style="cursor: pointer">
+                行政资源</a><span><img src="/IMAGES/shu.jpg" /></span></li>
+            <li id='mywjg' onclick='channelType(6)'><a onclick="alert('维护中！')" style="cursor: pointer">
+                我的文件柜</a></li>
+            <img src="/IMAGES/tu2.png" class="tu1" />
+            <img src="/IMAGES/tu3.png" class="tu2" />
+        </ul>
+        <asp:ContentPlaceHolder ID="Content" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    <div id="d1"></div>
+</body>
+</html>

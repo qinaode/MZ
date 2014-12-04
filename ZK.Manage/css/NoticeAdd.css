@@ -1,0 +1,8 @@
+﻿body ,table, tr,td
+{ font-size:14px; font-family:微软雅黑; margin:0; padding:0; }
+.pagePath{ font-size:15px;}
+.searchform{ border:0; margin-top:20px; margin-left:15px;padding:0;}
+.searchform table {border:1px solid #ECECEC;}
+.th_title{ width:70px;float:right; vertical-align:top;}
+.td_btn{float: left;}
+.td_send{ float:left; margin-left:12px; margin-right:12px;}

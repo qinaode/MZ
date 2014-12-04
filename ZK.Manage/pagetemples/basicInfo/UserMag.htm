@@ -1,0 +1,90 @@
+﻿<table width="100%" class="tableform text-center" border="0" cellspacing="0">
+    <tr class="userList" align="left">
+        <td style="width: 15px;">
+        </td>
+        <td style="width: 65px;">
+            状态
+        </td>
+        <td>
+            用户ID
+        </td>
+        <td>
+            用户名
+        </td>
+        <td>
+            昵称
+        </td>
+        <td>
+            姓名
+        </td>
+        <td>
+            性别
+        </td>
+        <td>
+            年龄
+        </td>
+        <td>
+            手机
+        </td>
+        <td>
+            职位
+        </td>
+        <td>
+            登录数
+        </td>
+        <td>
+            操作
+        </td>
+    </tr>
+    {#foreach $T as record} {#if '1'=='1'}
+    <tr align="left" class="nodeList" style="hover: background-color: #F8F7EF;">
+        <td style="width: 15px;">
+        </td>
+        <td height="28">
+        </td>
+        <td>
+            <a id="lbName_{$T.record.userid}">{$T.record.USERID}</a>
+        </td>
+        <td>
+            <a id="lbPath_{$T.record.userid}">{$T.record.USERNAME}</a>
+        </td>
+        <td>
+            <a id="lbParent_{$T.record.userid}">{$T.record.NICKNAME}</a>
+        </td>
+        <td>
+            <a id="lbDir_{$T.record.userid}">{$T.record.ACTUALNAME}</a>
+        </td>
+        <td>
+            {#if $T.record.SEX=='0'} <a id="lbOwner_{$T.record.userid}">女</a> {#else if $T.record.SEX=='1'}
+            <a id="A4">男</a> {#else} <a id="A5"></a>{#/if}
+        </td>
+        <td>
+            <a id="lbType_{$T.record.userid}">{$T.record.AGE}</a>
+        </td>
+        <td>
+            <a id="A1">{StringFormat.IsNullOrEmpty($T.record.MOBILE)}</a>                 
+        </td>
+        <td>
+             <a id="A6">{StringFormat.IsNullOrEmpty($T.record.JOBTITLE)}</a>    
+           
+        </td>
+        <td>
+            <a id="A3">{$T.record.LOGINTIMES}</a>
+        </td>
+        <td>
+            {#if $T.record.USERLOCK=='0'} <a id="lock_{$T.record.USERID}" onclick="IsLock(this.id,'lock');">
+                <img src="../../image/lock.gif" width="9" height="9" />锁定</a> {#else} <a id="unck_{$T.record.USERID}"
+                    onclick="IsLock(this.id,'unlock');">
+                    <img src="../../image/unlock.gif" width="9" height="9" />解锁</a> {#/if} <a id="{$T.record.USERID}"
+                        onclick="AddOrEditUser(this.id,'1','修改');">
+                        <img src="../../image/mof.gif" width="9" height="9" />修改</a> <a id="Delete_{$T.record.USERID}"
+                            onclick="Delete(this.id,'Del')">
+                            <img src="../../image/del3.gif" width="9" height="9" />删除</a> <a id="role_{$T.record.USERID}"
+                                onclick="AddOrEditRole(this.id,'授权角色')">
+                                <img src="../../image/mof.gif" width="9" height="9" />授权角色</a>
+            <a id="pwd_{$T.record.USERID}" onclick="PwdEdit(this.id,'pwd');">
+                <img src="../../image/pwd.gif" width="9" height="9" />初始化密码</a>
+        </td>
+    </tr>
+    {#else} {#/if} {#/for}
+</table>

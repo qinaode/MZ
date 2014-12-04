@@ -1,0 +1,23 @@
+﻿<script src="/Scripts/node.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        SetBtns(5);
+    })
+</script>
+<!--文件列表-->
+<ul class="header">
+    <li class="fname"><span class="ch off" onclick="CheckOrUncheck(this)"></span>文件名</li>
+    <li class="fsize">大小</li>
+    <li class="mtime">新建时间</li>
+</ul>
+{#foreach $T as row}
+<ul class="datalist" fid="{$T.row.id}">
+    <li class="fname">
+        <span class="ch off" onclick="NodeCheckOrUncheck(this)"></span>
+        <span class="icons {$T.row.icon}"></span>
+        <span class="n">{$T.row.fn}</span>
+    </li>
+    <li class="fsize">{$T.row.fz}</li>
+    <li class="mtime">{$T.row.ct}</li>
+</ul>
+{#/for} 

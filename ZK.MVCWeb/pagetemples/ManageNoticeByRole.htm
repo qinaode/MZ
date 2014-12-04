@@ -1,0 +1,16 @@
+﻿<div class="div_th"><table>
+<tr style=" height:34px;  min-height:34px;width:740px;"><th style="width:390px;">标题</th>
+<th style="width:150px;" >发送时间</th>
+<th style="width:200px;">操作</th></tr>
+</table>
+</div>
+{#foreach $T as record} 
+ <div class="div_table"><table>
+<tr id='not_{$T.record.SID}' style=" height:34px;  min-height:34px; width:740px;">
+<td style=" width:390px; text-align:left;">{$T.record.TITLE}</td>
+<td style=" width:150px;">{$T.record.SENDTIME}</td>
+<td style=" width:200px;"><a id='del_{$T.record.SID}' onclick='DelNotice(this.id)' ><img src="../imagesN/sendNotice/del.png" style=" width:10px; height:10px;" />删除</a><a id='sta_{$T.record.SID}' onclick='ViewStateList(this.id)'style=" margin-left:10px;" ><img style=" width:10px; height:10px; margin-left:20px;" src="../imagesN/sendNotice/icon.png" />查看状态</a></td>
+</tr></table></div>
+{#/for}
+
+

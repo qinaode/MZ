@@ -1,0 +1,33 @@
+﻿<table width="100%" class="tableform text-center" border="0" cellspacing="0">
+    <tr align="left" class="userList">
+        <td>
+           选择         </td>
+        <td>
+            年级名称
+        </td>
+        <td>
+            年级描述
+        </td>
+        <td>
+            操作
+        </td>
+    </tr>
+    {#foreach $T as record}
+    <tr align="left" class="Teach_Element nodeList">
+        <td>
+            <input type="checkbox" name="checkbox_1" id="{$T.record.gradeID}" onclick="CheckOne()"/>
+        </td>
+        <td>
+            <a id="lab_{$T.record.gradeID}">{$T.record.gradeName}</a>
+        </td>
+        <td>
+            <a id="lab_2{$T.record.gradeID}">{$T.record.gradeDesc}</a>
+        </td>
+        <td>
+            <!--<input type="button" value="修改" onclick="UpdateThisItem_Grade(this.id)" id="Update_{$T.record.gradeID}" />-->
+            <a onclick="UpdateThisItem_Grade(this.id)" id="Update_{$T.record.gradeID}"><img src="../image/mof.gif" width="11" height="10" />修改</a>
+             <a onclick="DeleteThisItem_Grade(this.id)" id="Delete_{$T.record.gradeID}"><img src="../image/del3.gif" width="9" height="9" />删除</a>
+        </td>
+    </tr>
+    {#/for}
+</table>

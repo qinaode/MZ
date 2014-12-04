@@ -1,0 +1,155 @@
+﻿<div style="width: 100%; height: 100%;">
+    <div class="hidemenu">
+        <table width="100%" border="0" cellspacing="0">
+            <tr>
+                <td width="10">
+                    &nbsp;
+                </td>
+                <td width="18">
+                    <img src="/imagesN/diskImages/xuankuang.png" width="17" height="17" />
+                </td>
+                <td colspan="2">
+                    文件名
+                </td>
+                <!-- <td width="234">
+                    下载次数
+                </td>-->
+                <td width="150">
+                    大小
+                </td>
+                <td width="50" align="center">
+                    日期
+                </td>
+                <td width="14" align="right">
+                    <img src="/imagesN/diskImages/xiala.png" width="7" height="7" />
+                </td>
+                <td width="8">
+                    &nbsp;
+                </td>
+                <td width="27">
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10">
+                    <hr />
+                </td>
+            </tr>
+            {#foreach $T as record} {#if $T.record.file_type=='1'}
+            <tr valign="middle" id="div1_{$T.record.id}" name="aContent" class="div_fileinfo directory div_list"
+                style="cursor: pointer;">
+                <td width="10" height="35">
+                    <a href="#"></a>
+                </td>
+                <td width="18">
+                    <a href="javascript:void(0);return false;">
+                        <img src="/imagesN/diskImages/xuankuang.png" width="17" height="17" border="0" id="Image_{$T.record.id}"
+                            class="xuan_image unchecked" /></a>
+                </td>
+                <td width="36">
+                    <!--<a href="#">列表绑定yanyan20140311
+                     <!--   <img src="<%=ZK.Common.GetFileImage.getListImageForDisk(Convert.ToInt32(item.mime_type)) %>"-->
+                    <!-- <img src="{$T.record.file_path}"
+                            width="33" height="28" border="0" /></a>-->
+                   <a href="#">
+                        <img src="{$T.record.file_path}" width="33" height="28" border="0" /></a>
+                </td>
+                <td width="515">
+                    <!-- 用来记录文件的类型 文件 或 文件夹 -->
+                    <input type="hidden" id="hidtype_{$T.record.id}" value="{$T.record.file_type}" />
+                    <a href="#">{$T.record.file_name}</a>
+                </td>
+                <!-- <td>
+                    <a href="#">暂缺</a>
+                </td>-->
+                <td>
+                    <a >{$T.record.file_size}</a>
+                </td>
+                <td  align="right" width="100">
+                    <a >{$T.record.created_at}</a>
+                </td>
+                <td>
+                    <a href="#"></a>
+                </td>
+                <td>
+                    <a href="#"></a>
+                </td>
+            </tr>
+            {#else}
+            <tr valign="middle" id="div1_{$T.record.id}" name="aContent" class="div_fileinfo file div_list"
+                style="cursor: pointer;">
+                <td width="10" height="35">
+                    <a href="#"></a>
+                </td>
+                <td width="18">
+                    <a href="#">
+                        <img src="/imagesN/diskImages/xuankuang.png" width="17" height="17" border="0" id="Image_{$T.record.id}"
+                            class="xuan_image unchecked" /></a>
+                </td>
+                <td width="36">
+                    <a href="#">
+                        <!--  <img src="<%=ZK.Common.GetFileImage.getListImageForDisk(Convert.ToInt32(item.mime_type)) %>"-->
+                        <img src="{$T.record.file_path}" width="33" height="28" border="0" /></a>
+                </td>
+                <td width="515">
+                    <!-- 用来记录文件的类型 文件 或 文件夹 -->
+                    <input type="hidden" id="hidtype_{$T.record.id}" value="{$T.record.file_type}" />
+                    <a href="#">{$T.record.file_name}</a>
+                </td>
+                <!-- <td>xiugai yanyan201403111448
+                    <a>暂缺</a>
+                </td>-->
+                <td>
+                    <a>{$T.record.file_size}</a>
+                </td>
+                <td  align="right" width="100">
+                     <a >{$T.record.created_at}</a>
+                </td>
+                <td>
+                    <a href="#"></a>
+                </td>
+                <td>
+                    <a href="#"></a>
+                </td>
+            </tr>
+            {#/if} {#/for}
+            <tr>
+                <td width="10">
+                    &nbsp;
+                </td>
+                <td width="18">
+                    &nbsp;
+                </td>
+                <td colspan="2">
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td colspan="2" align="right">
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+        </table>
+    </div>
+    <ul id="menu" style="display: none; position: absolute; top: 100px; left: 100px;">
+        <li><a href="#"><span class="ui-icon ui-icon-disk"></span>分享</a></li>
+        <li><a href="#" onclick="ShareMyFiles()"><span class="ui-icon ui-icon-disk"></span>共享</a></li>
+        <li id="li_push"><a onclick="PushFile()" id="a_push" target="_blank"><span class="ui-icon ui-icon-zoomin">
+        </span>推送</a></li>
+        <li><a href="#" onclick="Btn_ResetName()"><span class="ui-icon ui-icon-zoomout"></span>重命名</a></li>
+        <li><a href="#" onclick="DeleteFile()" id="delete"><span class="ui-icon ui-icon-print">
+        </span>删除</a></li>
+        <li><a href="#" onclick="Btn_MoveFile()"><span class="ui-icon ui-icon-print"></span>移动</a> </li>
+         <li><a href="#" onclick="DownLoadFiles()"><span class="ui-icon ui-icon-print"></span>离线下载</a> </li>
+    </ul>
+</div>

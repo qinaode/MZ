@@ -1,0 +1,75 @@
+﻿a
+{
+    text-decoration: none;
+    color: #000;
+}
+.ui-menu
+{
+    /* 自定义宽度 */
+    width: 120px;
+}
+.selected
+{
+    border: 1px solid #bcecbf;
+    background-color: #f4fff9;
+}
+
+.ul_obtn
+{
+    list-style: none;
+}
+.ul_obtn li
+{
+    float: left;
+    text-align: center;
+    margin-left: 10px;
+}
+.MF_UL
+{
+    list-style: none;
+    text-align: left;
+}
+
+.folderlist
+{
+    text-decoration: none;
+    font: 12px/1.5 tahoma,arial,宋体b8b\4f53;
+    width: 100%;
+}
+.hidden
+{
+    display: none;
+}
+/*
+文件夹路径a标签样式
+*/
+.folderpath
+{
+    text-decoration: none;
+    color: #61A7D5;
+}
+.folderpath:hover
+{
+    text-decoration: underline;
+    color: #09f;
+}
+.moveon
+{
+    border: 1px solid #bcecbf;
+    background-color: #f4fff9;
+}
+/*文件夹名称文本框*/
+.txt
+{
+    padding: 8px 10px;
+    float: left;
+    outline: 0;
+    border: solid 1px #CCC;
+    box-shadow: 0 0 5px #ccc;
+    width: 220px;
+    border-radius: 4px;
+}
+.txt:focus
+{
+    border: solid 1px #09f;
+}

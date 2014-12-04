@@ -1,0 +1,50 @@
+﻿<table width="100%" class="tableform text-center" border="0" cellspacing="0">
+    <tr class="userList" align="left">
+        <td style="width: 15px;">
+        </td>
+        <td style="width: 65px;">
+             <input type="checkbox" value="全选" id="check_CheckAll" />&nbsp; &nbsp;<a id="a_CheckAll"
+                                onclick="CheckAll()">全选 </a>
+        </td>
+        <td>
+            用户ID
+        </td>
+        <td>
+            用户名
+        </td>
+        <td>
+            昵称
+        </td>
+        <td>
+            姓名
+        </td>
+        <td>
+            性别
+        </td>
+ 
+    </tr>
+    {#foreach $T as record} {#if '1'=='1'}
+    <tr align="left" class="nodeList" style="hover: background-color: #F8F7EF;">
+        <td style="width: 15px;">
+        </td>
+        <td >
+            <input type="checkbox" name="checkbox_1" id="{$T.record.USERID}" />
+        </td>
+        <td>
+            <a id="lbName_{$T.record.userid}">{$T.record.USERID}</a>
+        </td>
+        <td>
+            <a id="lbPath_{$T.record.userid}">{$T.record.USERNAME}</a>
+        </td>
+        <td>
+            <a id="lbParent_{$T.record.userid}">{$T.record.NICKNAME}</a>
+        </td>
+        <td>
+            <a id="lbDir_{$T.record.userid}">{$T.record.ACTUALNAME}</a>
+        </td>
+        <td>
+            <a id="lbOwner_{$T.record.userid}">{$T.record.SEX}</a>
+        </td>     
+    </tr>
+    {#else} {#/if} {#/for}
+</table>

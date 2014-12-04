@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Default.master.cs" Inherits="_Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script language="javascript" type="text/javascript" src="Script/jquery-1.5.1.js"></script>
+    <script language="javascript" type="text/javascript" src="Script/ajaxupload.3.5.js"></script>
+    <style type="text/css">
+        body
+        {
+            font-family: Trebuchet MS;
+            font-size: 10pt;
+        }
+        div.close
+        {
+            width: 16px;
+            height: 16px;
+            float: right;
+            cursor: pointer;
+            position: relative;
+            top: -65px;
+        }
+        div.close
+        {
+            background-image: url('Images/Close_Gray.png');
+        }
+        div.close:hover
+        {
+            background-image: url('Images/Close_Red.png');
+        }
+        .offset
+        {
+            box-shadow: 4px 5px 0 #DFDFDF;
+        }
+        .imageContainer
+        {
+            margin: 5px;
+            border: solid 1px #DFDFDF;
+            border-radius: 5px 5px 5px 5px;
+            float: left;
+            display: none;
+            width: 64px;
+            height: 64px;
+        }
+        #uploadImageWrapper
+        {
+            width: 100%;
+            height: 275px;
+            overflow: auto;
+        }
+        #imageUploader
+        {
+            border: solid 1px #99BBE8;
+            height: 300px;
+            width: 307px;
+        }
+        #imageUploader .header
+        {
+            background-color: #CBDDF3;
+            background-image: -moz-linear-gradient(center top , #DAE7F6, #CDDEF3 45%, #ABC7EC 46%, #ABC7EC 50%, #B8CFEE 51%, #CBDDF3);
+            border-color: #99BBE8;
+            border-style: solid;
+            border-width: 1px;
+            box-shadow: 0 1px 0 0 #F4F8FD inset;
+            height: 25px;
+        }
+        #imageUploader .footer
+        {
+            background-color: #D3E1F1;
+            background-image: -moz-linear-gradient(center top , #DFE9F5, #D3E1F1);
+            border-color: #99BBE8;
+            height: 25px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,59 @@
+/* CSS Document */
+/*body,div,span,img,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,input,textarea,select,option,fieldset,legend,p,th,td{margin:0; padding:0;
+    width: 99px;
+}*/
+fieldset,img {border: 0;}
+a{text-decoration:none; color:#4d4d4d;}
+a:hover{text-decoration:underline;}
+.clear{clear:both;}
+ul,li{list-style:none;}
+body{ font-family:'微软雅黑'; background:#fafafa; color:#4d4d4d; font-size:14px; line-height:20px;}
+.yellow{color:#fa9300;}
+.yellow a{color:#fa9300;}
+.blue{color:#418add;}
+.blue a{color:#418add;}
+.red{color:#f30000;}
+.red a{color:#f30000;}
+.green{color:#39a60d;}
+.green2{color:#319201;}
+.grren a{color:#39a60d;}
+.displaynone{display:none;}
+/*header*/
+.topbar_wrap{height:31px; background:#e6e6e6; border-bottom:1px solid #e1e1e1; font-size:12px; color:#8c8c8c}
+.topbar{width:960px; height:31px; margin:0 auto; text-align:right; line-height:31px;}
+.topbar a{color:#8c8c8c}
+
+.header{width:960px; height:56px; margin:28px auto 0; position:relative;}
+.header h1{width:268px; height:70px; background:url(../images/logo.png) no-repeat; position:absolute; left:0; top:-18px;}
+.header h1 a{display:block; width:268px; height:70px; text-indent:-9999px;}
+.menu{float:right; width:550px; height:33px; margin-top:23px; color:#808684}
+.menu a{color:#808684; font:bold; font-size:16px;}
+.menu ul li{float:left; width:80px; height:28px; margin:0 0 0 30px; display:inline; text-align:center; line-height:28px;}
+.menu ul li a{ display:block;  width:80px; height:28px; text-decoration:none}
+.menu ul li.current a{color:#4cb01a; border-bottom:5px solid #319201;}
+.menu ul li a:hover{color:#4cb01a; border-bottom:5px solid #319201; text-decoration:none;}
+
+.main{width:960px; margin:0 auto;}
+.main_wrap{background:url(../images/main_bg.png) repeat-x; overflow:hidden}
+.box{width:958px; height:600px; border:1px solid #e6e6e6; margin:25px auto 0;}
+.box{width:858px; height:320px; border:1px solid #e6e6e6;margin:25px auto 0}
+.box_one{float:left; width:260px; height:150px; text-align:center; margin-top:30px; margin-left:20px;}  
+.box_two{float:left; width:260px; height:150px; text-align:center; margin-top:30px; margin-left:10px;}  
+.box_three{float:left; width:260px; height:150px; text-align:center;margin-top:30px; margin-left:10px;} 
+.tb_one{width:230px; text-align:center; margin-top:10px; margin-left:10px;}
+
+.title{height:37px; background:url(../images/repeat_bg.png) 0 -46px repeat-x; line-height:37px;}
+.title h2{float:left; padding-left:30px; font-size:18px; color:#333; font-weight:normal;}
+.title span.space{float:left;; padding:0 5px;}
+.title h3{float:left; color:#4c4c4c; font-size:14px; font-weight:normal;}
+.box_cnt{padding:30px 40px; color:#666; }
+.message_alert{ background:url(../images/icon.png) no-repeat 0 6px; padding-left:15px; font-size:16px;}
+.tabs_title{height:27px; background:url(../images/title_bg.png) repeat-x; margin-bottom:15px; overflow:hidden}
+.tabs_title ul li{float:left; width:82px; height:25px; border:1px solid #dedad1; border-bottom:0; text-align:center; line-height:25px; cursor:pointer;}
+.tabs_title ul li.current{  border-color:#49b018; border-bottom:1px solid #fcfcfc;}
+
+.footer{ padding:20px 0; margin-top:5px;  text-align:center; line-height:26px; color:#8c8c8c; font-size:12px;}
+.footer a{color:#8c8c8c;}
+
+.form_item input.greenborder,.cash_sum_other input.greenborder,.search_navl input.greenborder{border:1px solid #3da611;}
+

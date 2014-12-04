@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<meta content="no-cache" http-equiv="Pragma">
+		<meta content="-1" http-equiv="Expires">
+		<meta content="no-cache" http-equiv="Cache-Control">
+		<meta id="viewport" name="viewport" content="width=device-width,initial-scale=1.0,target-densitydpi=high-dpi">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+		<link rel="apple-touch-icon" href="imgs/icon.png" />
+		<link rel="apple-touch-icon-precomposed" href="imgs/icon.png" />
+		<link rel="apple-touch-startup-image" href="startup.png" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.easing.js"></script>
+		<script src="js/jquery.transit.min.js"></script>
+		<script src="js/require.js"></script>
+		<script src="js/ssdjs.js"></script>
+		<script src="js/socket.io.js"></script>
+		<script src="js/iscroll.js"></script>
+		<script src="js/json2.js"></script>
+		<script src="js/hl.main.js"></script>
+		<script src="js/parcycle.js"></script>
+		<script src="js/sys.js"></script>
+		<script src="src/util/sys.js"></script>
+		<title>皓联教育</title>
+		<style type="text/css" media="screen">
+			/*
+			 CSS rules to use for styling the overlay:
+			 .chromeFrameOverlayContent
+			 .chromeFrameOverlayContent iframe
+			 .chromeFrameOverlayCloseBar
+			 .chromeFrameOverlayUnderlay
+			 */
+		</style>
+	</head>
+	<body style='OVERFLOW:SCROLL;OVERFLOW:HIDDEN'>
+		<div id="main"></div>
+		<div id="pop" style="display:none"></div>
+		<div id="up" style="display:none"></div>
+		<div id="confirm" style="display:none"></div>
+		<script>
+            var hl = (hl || {});
+            hl.CLOSE_OPT = 0;
+            hlRelease = false;
+
+            var hlscreenval = null;
+            var hlland = null;
+            function hlscreen() {
+                if(hlscreenval == null) {
+                    hlscreenval = {
+                        sw : window.screen.width,
+                        sh : window.screen.height,
+                        x : window['innerWidth'] || document.documentElement.clientWidth,
+                        y : window['innerHeight'] || document.documentElement.clientHeight
+                    };
+                }
+                return hlscreenval;
+            }
+
+            function hl$(id) {
+                return document.getElementById(id);
+            }
+
+            function hlSize() {
+                return {
+                    x : window['innerWidth'] || document.documentElement.clientWidth,
+                    y : window['innerHeight'] || document.documentElement.clientHeight
+                }
+            }
+
+            function mainTest() {
+                var size = hlSize();
+                var hlMain = hl$("main");
+                hlMain.style.left = 0 + "px";
+                hlMain.style.top = 0 + "px";
+                hlMain.style.width = size.x + "px";
+                hlMain.style.height = size.y + "px";
+
+               // hlMain.style.backgroundColor = "green";
+
+                var bg = ssdjs.dom.img(0, 0, size.x, size.y, "images/login_backgroup.jpg");
+                hlMain.appendChild(bg);
+            }
+
+
+            document.addEventListener('DOMContentLoaded', mainTest, false);
+
+            function isTouch() {
+                if('ontouchstart' in window) {
+                    return true;
+                }
+                if('createTouch' in document) {
+                    return true;
+                }
+                return false;
+            }
+		</script>
+	</body>
+</html>

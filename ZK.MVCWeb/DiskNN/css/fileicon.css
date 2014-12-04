@@ -1,0 +1,98 @@
+﻿/*以下是小图标样式*/
+.folder
+{
+    position: absolute;
+    top: 12px;
+    background: url(/disknn/images/smallicon.png) no-repeat 0 0;
+    width: 16px;
+    height: 16px;
+}
+.share
+{
+    position: absolute;
+    top: 12px;
+    background: url(/disknn/images/smallicon.png) no-repeat -192px 0;
+    width: 16px;
+    height: 16px;
+}
+.rar
+{
+    position: absolute;
+    top: 12px;
+    background: url(/disknn/images/smallicon.png) no-repeat -96px 0;
+    width: 16px;
+    height: 16px;
+}
+.exe
+{
+    position: absolute;
+    top: 12px;
+    background: url(/disknn/images/smallicon.png) no-repeat -80px 0;
+    width: 16px;
+    height: 16px;
+}
+.unknow
+{
+    position: absolute;
+    top: 12px;
+    background: url(/disknn/images/smallicon.png) no-repeat -112px 0;
+    width: 16px;
+    height: 16px;
+}
+.excel
+{
+    position: absolute;
+    top: 12px;
+    background: url(/disknn/images/smallicon.png) no-repeat -160px 0;
+    width: 16px;
+    height: 16px;
+}
+.word
+{
+    position: absolute;
+    top: 12px;
+    background: url(/disknn/images/smallicon.png) no-repeat -64px 0;
+    width: 16px;
+    height: 16px;
+}
+.ppt
+{
+    position: absolute;
+    top: 12px;
+    background: url(/disknn/images/smallicon.png) no-repeat -176px 0;
+    width: 16px;
+    height: 16px;
+}
+.pdf
+{
+    position: absolute;
+    top: 12px;
+    background: url(/disknn/images/smallicon.png) no-repeat -48px 0;
+    width: 16px;
+    height: 16px;
+}
+.pic
+{
+    position: absolute;
+    top: 12px;
+    background: url(/disknn/images/smallicon.png) no-repeat -16px 0;
+    width: 16px;
+    height: 16px;
+}
+.text
+{
+    position: absolute;
+    top: 12px;
+    background: url(/disknn/images/smallicon.png) no-repeat -144px 0;
+    width: 16px;
+    height: 16px;
+}
+.video
+{
+    position: absolute;
+    top: 12px;
+    background: url(/disknn/images/smallicon.png) no-repeat -128px 0;
+    width: 16px;
+    height: 16px;
+}
+

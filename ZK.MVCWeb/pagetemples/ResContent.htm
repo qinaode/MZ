@@ -1,0 +1,55 @@
+﻿<div style="width: 100%; height: 100%;">
+    <ul style="list-style-type: none;" class="hidemenu">
+        {#foreach $T as record} {#if $T.record.file_type=='1'}
+        <li style="margin-left: 10px; margin-bottom: 10px; cursor: pointer;" id="div1_{$T.record.id }"
+            class="li_rescontent" showflag="{$T.record.file_name }">
+            <div style="width: 120px; height: 140px; float: left; margin-left: 10px; margin-bottom: 10px;"
+                align="center" class="div_fileinfo directory" id="div2_{$T.record.id }" type="directory">
+                <a class="two aContent" title="{$T.record.file_name }" name="aContent" id="a_{$T.record.id }"
+                    versionid="{$T.record.version_id}" style="height: 125px;">
+                    <img src="{$T.record.file_path}" border="0" align="absmiddle" /><br />
+                    <p>
+                        {$T.record.file_name}</p>
+                </a>
+            </div>
+        </li>
+        {#elseif $T.record.file_type=='0'}
+        <li style="margin-left: 10px; margin-bottom: 10px; cursor: pointer;" id="div1_{$T.record.id }"
+            class="li_rescontent" showflag="{$T.record.file_name }">
+            <div style="width: 120px; height: 140px; float: left; margin-left: 10px; margin-bottom: 10px;"
+                align="center" class="div_fileinfo file" id="div2_{$T.record.id }" type="file">
+                <a class="two aContent" title="{$T.record.file_name }" name="aContent" id="a_{$T.record.id }"
+                    versionid="{$T.record.version_id}" style="height: 125px;">
+                    <img src="{$T.record.file_path}" border="0" align="absmiddle" /><br />
+                    <p>
+                        {$T.record.file_name}</p>
+                </a>
+            </div>
+        </li>
+        {#else}
+        <li style="margin-left: 10px; margin-bottom: 10px; cursor: pointer;" id="div1_{$T.record.id }"
+            class="li_rescontent" showflag="{$T.record.file_name }">
+            <div style="width: 120px; height: 140px; float: left; margin-left: 10px; margin-bottom: 10px;"
+                align="center" class="div_fileinfo directory" id="div2_{$T.record.id }" type="directory_share">
+                <a class="two aContent" title="{$T.record.file_name }" name="aContent" id="a_{$T.record.id }"
+                    versionid="{$T.record.version_id}" style="height: 125px;">
+                    <img src="{$T.record.file_path}" border="0" align="absmiddle" /><br />
+                    <p>
+                        {$T.record.file_name}</p>
+                </a>
+            </div>
+        </li>
+        {#/if} {#/for}
+    </ul>
+    <ul id="menu" style="display: none; position: absolute; top: 100px; left: 100px;">
+        <li><a href="#"><span class="ui-icon ui-icon-disk"></span>分享</a></li>
+        <li><a href="#" onclick="ShareMyFiles()"><span class="ui-icon ui-icon-disk"></span>共享</a></li>
+        <li id="li_push"><a onclick="PushFile()" id="a_push" target="_blank"><span class="ui-icon ui-icon-zoomin">
+        </span>推送</a></li>
+        <li><a href="#" onclick="Btn_ResetName()"><span class="ui-icon ui-icon-zoomout"></span>重命名</a></li>
+        <li><a href="#" onclick="DeleteFile()" id="delete"><span class="ui-icon ui-icon-print">
+        </span>删除</a></li>
+        <li><a href="#" onclick="Btn_MoveFile()"><span class="ui-icon ui-icon-print"></span>移动</a> </li>
+         <li><a href="#" onclick="DownLoadFiles()"><span class="ui-icon ui-icon-print"></span>离线下载</a> </li>
+    </ul>
+</div>

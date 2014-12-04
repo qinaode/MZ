@@ -1,0 +1,178 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="renderer" content="webkit" />
+    <script type="text/javascript" src="/Scripts/jquery-1.7.2.min.js"></script>
+    <link href="/Css/common.css" rel="stylesheet" type="text/css" />
+    <link href="/Css/top.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript">
+        var fType = "all";
+
+        function Search() {
+            var txtSearch = $("#searchWord").val();
+            window.location = "/Search/Index?search=" + txtSearch + "&fType=" + fType;
+        }
+
+
+        function GetType(type) {
+            fType = type;
+        }
+        //得到LOGO和用户头像
+        $(function () {
+          
+            $.ajax({
+                type: "Post",
+                url: "/Home/GetXMLData",
+                data: {  },
+                datatype: "json/text",
+                success: function (backdata) {
+
+                    document.getElementById("imgid").src = backdata.toString();
+                }
+            });
+
+        })
+
+        function indexOver() {
+            var liNode = $('#TopIndex');
+            liNode.removeClass('topIndex');
+            liNode.addClass('topIndexCurrent');
+        }
+        function indexOut() {
+            var liNode = $('#TopIndex');
+            liNode.removeClass('topIndexCurrent');
+            liNode.addClass('topIndex');
+        }
+        function teachOver() {
+            var liNode = $('#TopIndexTeach');
+            liNode.removeClass('topTeach');
+            liNode.addClass('topTeachCurrent');
+        }
+        function teachOut() {
+            var liNode = $('#TopIndexTeach');
+            liNode.removeClass('topTeachCurrent');
+            liNode.addClass('topTeach');
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <title>
+        <%=ZK.Controllers.ZKAuthAttributeFilter.getTitle() %><asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+    </title>
+</head>
+<body>
+    <div class="indexTop">
+        <div class="logoInfo">
+            <a href="">
+                <img alt="" src="" width="225" id="imgid" height="79" style="border: 0px;" />
+            </a>
+        </div>
+        <form id="zkForm">
+        <div class="searchArea">
+            <ul class="docs">
+                <li class="current">
+                    <img src="/ImagesN/Index_03.jpg" style="cursor: pointer;" title="全部" width="32" height="40"
+                        id="all" onclick="GetType(this.id);" /></li>
+                <li>
+                    <img src="/ImagesN/Index_09.jpg" style="cursor: pointer;" title="文档" width="32" height="40"
+                        id="doc" onclick="GetType(this.id);" /></li>
+                <li>
+                    <img src="/ImagesN/Index_07.jpg" style="cursor: pointer;" title="PPT" width="39" height="40"
+                        id="ppt" onclick="GetType(this.id);" /></li>
+                <li>
+                    <img src="/ImagesN/Index_13.jpg" style="cursor: pointer;" title="PDF" width="39" height="40"
+                        id="pdf" onclick="GetType(this.id);" /></li>
+                <li>
+                    <img src="/ImagesN/Index_15.jpg" style="cursor: pointer;" title="图片" width="39" height="40"
+                        id="pic" onclick="GetType(this.id);" /></li>
+                <li>
+                    <img src="/ImagesN/Index_17.jpg" style="cursor: pointer;" title="视频" width="38" height="42"
+                        id="vedio" onclick="GetType(this.id);" /></li>
+            </ul>
+            <div class="searchForm">
+                <%--<input name="key" id="searchWord" type="text" />  <span style="cursor: pointer"><image src="/ImagesN/Index_29.jpg" onclick="javascript:$('#zkForm').attr('action','/Search');$('#zkForm').submit();" id="searchBt" value="搜索" width="39" height="38" /></span>--%>
+                <input name="key" id="searchWord" type="text" />
+                <span style="cursor: pointer">
+                    <image src="/ImagesN/Index_29.jpg" onclick="Search();" id="searchBt" value="搜索" width="39"
+                        height="38" />
+                </span>
+            </div>
+        </div>
+        </form>
+        <div class="userInfo" style="margin: 10px;">
+            <div id="userPhoto">
+                <%
+                    
+                    var face = ((ZK.Model.USERS)(Session["user"])).FACEFILE; 
+                    %>
+                <%if (face != null && face != "")
+                  {%>
+                <img src="<%="/Files/Faces/" + face %>" width="65" height="65" />
+                <% }
+                  else
+                  {%>
+                <img src="/ImagesN/Index_20.jpg" width="63" height="78" />
+                <% }  %>
+            </div>
+               
+            <div id="userInfo">
+                <%if (Session["uid"] != null)
+                  {%>
+                <span id="userName">欢迎您，<%=((ZK.Model.USERS)(Session["user"])).USERNAME%></span>
+                <div id="userAction">
+                <a href="/DiskN/CheckUser?username=<%=((ZK.Model.USERS)(Session["user"])).USERNAME %>">我的网盘</a>&nbsp;|&nbsp;<a href="/account/logout">退出</a></div>
+                <%}%>
+            </div>
+              </div>
+        <div>
+            <ul class="mainMenu" style="margin-top: 0px;">
+                <li id="TopIndex" style="width: 146px; height: 58px; line-height: 58px; cursor: pointer;"
+                    <%if(ViewData["current"]=="index") {%> class="topIndexCurrent" <%} else{%>class="topIndex"
+                    <%} %> onclick="window.location ='/'"></li>
+                <li id="TopTeach" style="width: 146px; height: 58px; line-height: 58px; cursor: pointer;"
+                    <%if(ViewData["current"]=="teach") {%> class="topTeachCurrent" <%} else{%>class="topTeach"
+                    <%} %> onclick="window.location ='/teach/'"></li>
+                <li id="TopMoral" style="width: 146px; height: 58px; line-height: 58px; cursor: pointer;"
+                    <%if(ViewData["current"]=="moral") {%> class="topMoralCurrent" <%} else{%>class="topMoral"
+                    <%} %> onclick="window.location ='/moral/'"></li>
+                <li id="TopAdmin" style="width: 146px; height: 58px; line-height: 58px; cursor: pointer;"
+                    <%if(ViewData["current"]=="admin") {%> class="topadminCurrent" <%} else{%>class="topadmin"
+                    <%} %> onclick="window.location ='/Administration/'"></li>
+                <%if (Session["user"] != null)
+                  {%>
+<%--
+                <li id="TopDisk" style="width: 146px; height: 58px; line-height: 58px; cursor: pointer;"     
+                    class="topdisk" onclick="window.location ='/netdisk/index.php/customUserSource/direct/token?token=<%= ((ZK.Model.USERS)(Session["user"])).TOKEN %>&sign=9fa6ff051aff2f971fd7e6d2bcc2d495&time=1385539029'">
+
+                </li>--%>
+               <%-- <li id="Li1" style="width: 146px; height: 58px; line-height: 58px; cursor: pointer;"
+
+                </li>--%>
+               <li id="Li1" style="width: 146px; height: 58px; line-height: 58px; cursor: pointer;"
+                    class="topdisk" onclick="window.location ='/DiskN/CheckUser?username=<%=((ZK.Model.USERS)(Session["user"])).USERNAME %>'">
+
+                </li>
+                <%} %>
+            </ul>
+        </div>
+    </div>
+    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <div class="bottom">
+        <%--<ul class="userhelp">
+            <a href="#neo">关于我们</a>&nbsp;|&nbsp;<a href="#neo">免责声明</a>&nbsp;|&nbsp;<a href="#neo">使用条款</a>&nbsp;|&nbsp;<a
+                href="#neo">常见问题</a></ul>--%>
+        <div class="copyright">
+            <div style="text-align: center; margin-right: auto; margin-left: auto;">
+                版权所有@北京皓联教育科技有限公司</div>
+        </div>
+        <div class="copyright">
+            <span id="address">公司地址：北京市朝阳区酒仙桥甲12号电子城科技大厦909</span><span class="connectUs">联系电话：010-67867798
+                1389675213456</span></div>
+    </div>
+</body>
+</html>

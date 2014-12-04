@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <!--网站标题-->
+  <WebTitle value="智客校园知识管理系统">
+  </WebTitle>
+  <!--ICP-->
+  <RecordNum value="110">
+  </RecordNum>
+  <!-- 版权-->
+  <CopyRight value="版权所有：123213">
+  </CopyRight>
+  <!--logo-->
+  <Logo value="/Files/Logo/WebLogo.jpg">
+  </Logo>
+  <!--是否挂载转码模块-->
+  <IsConvert value="Yes">
+  </IsConvert>
+  <!-- 每页文件显示数量-->
+  <PageCount>
+    <Teach value="8">
+    </Teach>
+    <Moral value="25">
+    </Moral>
+    <Admin value="25">
+    </Admin>
+    <Search value="35">
+    </Search>
+  </PageCount>
+  <!--用户默认空间-->
+  <UserSpace value="250">
+  </UserSpace>
+  <!-- 文件存放路径-->
+  <FilePath value="/Files/">
+  </FilePath>
+  <!--网站时间显示方式-->
+  <TimeFormate value="Y-M-D">
+  </TimeFormate>
+  <!--文档-->
+  <DocType value="doc docx xlsx">
+  </DocType>
+  <!--视频-->
+  <VideoType value="mp4">
+  </VideoType>
+  <!--photo-->
+  <PhotoType value="jpg">
+  </PhotoType>
+</Settings>

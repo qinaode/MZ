@@ -1,0 +1,23 @@
+﻿<div class="div_th"><table >
+<tr style=" height:34px; width:740px; min-height:34px;"><th width="440px">标题</th>
+<th style="width:100px;" >发送人</th>
+<th style="width:150px;">发送时间</th>
+<th style="width:50px;">是否查看</th></tr></table>
+</div>
+ {#foreach $T as record}{#if $T.record.isSee=='0'}
+<div class="div_table"><table>
+<tr id='not_{$T.record.SID}' class='noread' onclick='ShowNoticeItem(this.id)' style=" height:34px; min-height:34px; width:740px">
+<td style="width:440px; text-align:left;">{$T.record.TITLE}</td>
+<td style="width:100px">{$T.record.ACTUALNAME}</td>
+<td style="width:150px;">{$T.record.SENDTIME}</td>
+<td style="width:50px;">{$T.record.isRead}</td>
+</tr></table></div>
+{#else if $T.record.isSee=='1'}
+<div class="div_table"><table>
+<tr id='ret_{$T.record.SID}' class='read' onclick='ShowNoticeItem(this.id)' style=" height:34px; min-height:34px; width:740px">
+<td style="width:440px; text-align:left;">{$T.record.TITLE}</td>
+<td style="width:100px;">{$T.record.ACTUALNAME}</td>
+<td style="width:150px;">{$T.record.SENDTIME}</td>
+<td style="width:50px;">{$T.record.isRead}</td>
+</tr></table></div>
+{#else} {#/for}

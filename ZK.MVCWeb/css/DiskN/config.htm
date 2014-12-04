@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        body
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+        .moren
+        {
+            margin: 0px;
+            padding: 0px;
+            height: 220px;
+            width: 415px;
+        }
+        .biaoti
+        {
+            margin: 10px;
+            text-align: center;
+            color: #bf5e26;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .line01
+        {
+            text-align: center;
+        }
+        .tablemr
+        {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid #5b8bcd;
+            font-size: 14px;
+        }
+        .tablemr .bk
+        {
+            border-right: 1px solid #5b8bcd;
+            border-bottom: 1px solid #5b8bcd;
+        }
+        .tablemr .bk1
+        {
+            border-right: 1px solid #5b8bcd;
+        }
+        .quedingt
+        {
+            float: left;
+            padding-left: 140px;
+            font-size: 12px;
+        }
+        .quedingt a
+        {
+            text-decoration: none;
+            background: url(images/qd.png) no-repeat;
+            display: block;
+            padding: 5px 16px 10px 16px;
+            color: #fff;
+        }
+        .quedingt a:hover
+        {
+            background: url(images/qd1.png) no-repeat;
+            text-decoration: underline;
+        }
+        .quxiaot
+        {
+            float: left;
+            padding-left: 20px;
+            font-size: 12px;
+        }
+        .quxiaot a
+        {
+            text-decoration: none;
+            background: url(images/qx.png) no-repeat;
+            display: block;
+            padding: 5px 16px 10px 16px;
+            color: #000;
+        }
+        .quxiaot a:hover
+        {
+            background: url(images/qx1.png) no-repeat;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="moren" id="jqi" style="position: absolute; top: 125px; left: 30%; display: none;">
+        <div class="biaoti">
+            设置用户权限
+        </div>
+        <div class="line01">
+            <img alt="line" src="/css/DiskN/images/line.png" />
+        </div>
+        <div class="tablemr">
+            <table width="100%" border="0" cellspacing="0">
+                <tr bgcolor="#a3c5f3" class="co">
+                    <td height="28" align="center" class="bk">
+                        默认
+                    </td>
+                    <td colspan="3" align="center" class="bk">
+                        文件夹
+                    </td>
+                    <td colspan="4" align="center" class="bk">
+                        文件
+                    </td>
+                    <td align="center" class="bk">
+                        权限
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bk1" height="28" align="center">
+                        读取
+                    </td>
+                    <td class="bk1" colspan="3" align="center">
+                        创建&nbsp;&nbsp;更名&nbsp;&nbsp;删除
+                    </td>
+                    <td class="bk1" colspan="4" align="center">
+                        创建&nbsp;&nbsp;修改&nbsp;&nbsp;更名&nbsp;&nbsp;删除
+                    </td>
+                    <td align="center">
+                        权限
+                    </td>
+                </tr>
+                <tr id="tr_Defaul">
+                    <td class="bk1" align="center">
+                        <input type="checkbox" checked="checked" name="resource_read" id="checkbox" />
+                        <label for="checkbox">
+                        </label>
+                    </td>
+                    <td align="center">
+                        <input type="checkbox" name="folder_create" id="checkbox2" />
+                        <label for="checkbox2">
+                        </label>
+                    </td>
+                    <td align="center">
+                        <input type="checkbox" name="folder_rename" id="checkbox3" />
+                    </td>
+                    <td class="bk1" align="center">
+                        <input type="checkbox" name="folder_delete" id="checkbox4" />
+                    </td>
+                    <td align="center">
+                        <input type="checkbox" name="file_create" id="checkbox5" />
+                    </td>
+                    <td align="center">
+                        <input type="checkbox" name="file_modify" id="checkbox6" />
+                    </td>
+                    <td align="center">
+                        <input type="checkbox" name="file_rename" id="checkbox7" />
+                    </td>
+                    <td class="bk1" align="center">
+                        <input type="checkbox" name="file_delete" id="checkbox8" />
+                    </td>
+                    <td align="center">
+                        <input type="checkbox" name="permission_grant" id="checkbox9" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer">
+            <div class="quedingt">
+                <a href="#" onclick="defaultconfig()">确定</a>
+            </div>
+            <div class="quxiaot">
+                <a href="#" onclick="defaulthide()">取消</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

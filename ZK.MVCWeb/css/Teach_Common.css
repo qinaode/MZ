@@ -1,0 +1,48 @@
+﻿
+.div_filelist1
+{
+    background: #F4F9FF;
+    margin-bottom: 20px;
+}
+.div_filelist2
+{
+    background: #FFF;
+    margin-bottom: 20px;
+}
+.ject1
+{
+    width: 25px;
+    color: #0070D2;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 28px;
+    float: left; /*position: relative;*/
+    top: 50%;
+    margin-top: 20%; /*margin-top: -20px;*/
+}
+.image1
+{
+    width: 30px;
+    height: 161px;
+    float: left;
+    display: block; /*position: relative;*/
+    top: 50%;
+    margin-top: 3%; /*margin-top:-80px;*/
+    left: 0px;
+}
+.imginfo
+{
+    text-align: center;
+    width: 80px;
+}
+
+.div_filelist1 td
+{
+    text-align: left;
+    color: Black;
+}
+.div_filelist2 td
+{
+    text-align: left;
+    color: Black;
+}

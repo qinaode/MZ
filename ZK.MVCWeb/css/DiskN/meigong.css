@@ -1,0 +1,309 @@
+﻿body
+{
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
+}
+.clear
+{
+    clear: both;
+}
+.gxk
+{
+    margin: 0px;
+    padding: 0px;
+    height: 466px;
+    width: 780px;
+}
+.left
+{
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 407px;
+    width: 210px;
+}
+.fenzu
+{
+    height: 373px;
+    width: 210px;
+    border: 1px solid #b7b7b7;
+    margin-top: 15px;
+}
+/*.bumen{ float:left;text-align:center; cursor:pointer;  padding:9px 27px 6px 27px; }
+.bumen ul{float:left; list-style:none; padding:0px; margin:0px;}
+.bumen ul li{float:left;}
+.member{float:left;text-align:center; cursor:pointer; padding:9px 27px 6px 27px; }
+.member ul{float:left; list-style:none; padding:0px; margin:0px;}
+.member ul li{float:left;}.bumen ul li{float:left;}
+.member span{float:left; list-style:none; padding:0px; margin:0px;}
+.member ul li{float:left;}*/
+.bumen span
+{
+    float: left;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.mbcenter
+{
+    margin-left: 10px;
+    margin-top: 2px;
+}
+.bumen
+{
+    width: 105px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    height: 37px;
+}
+.member
+{
+    width: 105px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    height: 37px;
+}
+.image_yuan
+{
+    float: left;
+    width: 20px;
+    text-align: center;
+    list-style: none;
+    cursor: pointer;
+    height: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.txt_yuan
+{
+    float: left;
+    width: 35px;
+    text-align: center;
+    list-style: none;
+    cursor: pointer;
+    height: 20px;
+    margin-left: 5px;
+    padding-top: 2px;
+    margin-top: 10px;
+}
+img
+{
+    border-width: 0;
+}
+.sousuo .username
+{
+    width: 190px;
+    height: 23px;
+    margin: 7px 0px 0px 9px;
+}
+.userlist
+{
+    margin: 0px;
+    font-size: 12px;
+    text-align: left;
+}
+.userlist ul.img
+{
+    float: left;
+    list-style: none;
+    padding: 0px;
+    margin-left: 8px;
+    margin-top: 6px;
+    line-height: 22px;
+}
+.userlist ul li
+{
+    padding-top: 3px;
+}
+.userlist ul.name
+{
+    float: left;
+    list-style: none;
+    padding: 0px;
+    margin-top: 3px;
+    margin-left: 5px;
+    line-height: 25px;
+}
+.right
+{
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 407px;
+    width: 516px;
+}
+.title1
+{
+    margin: 5px 0px 0px 10px;
+}
+.title2
+{
+    margin: 0px;
+}
+.title2 a
+{
+    display: block;
+    padding: 7px 0px 5px 8px;
+    background: url(/css/DiskN/images/quanxian.png) no-repeat;
+    color: #000;
+    text-decoration: none;
+}
+.title2 a:hover
+{
+    color: #5882ba;
+}
+.quanxian
+{
+    height: 373px;
+    width: 516px;
+    border: 1px solid #b7b7b7;
+    margin-top: 8px;
+}
+.tab
+{
+    border-right: 1px solid #888888;
+}
+.line
+{
+    border-bottom: :1px solid #888888;
+}
+.footer
+{
+    margin-top: 10px;
+    padding: 0px;
+}
+.queding
+{
+    float: left;
+    padding-left: 190px;
+}
+.queding a
+{
+    text-decoration: none;
+    background: url(/css/DiskN/images/gongxiang.png) no-repeat;
+    display: block;
+    padding: 6px 40px 10px 20px;
+    color: #000;
+}
+.queding a:hover
+{
+    background: url(/css/DiskN/images/gongxiang1.png) no-repeat;
+    text-decoration: underline;
+}
+.quxiao
+{
+    float: left;
+    padding-left: 20px;
+}
+.quxiao a
+{
+    text-decoration: none;
+    background: url(/css/DiskN/images/quxiao.png) no-repeat;
+    display: block;
+    padding: 8px 28px 10px 28px;
+    color: #000;
+}
+.quxiao a:hover
+{
+    background: url(/css/DiskN/images/quxiao1.png) no-repeat;
+    text-decoration: underline;
+}
+.gorucheck
+{
+    background: #a3c5f3;
+    border-bottom: 3px solid #3c6eb2;
+}
+.fenzu a
+{
+    text-decoration: none;
+}
+.fenzu a:hover
+{
+    color: black;
+}
+.fenzu a:link
+{
+    color: black;
+}
+
+/*body{margin:0px; padding:0px;}*/
+.moren
+{
+    margin: 0px;
+    padding: 0px;
+    height: 220px;
+    width: 415px;
+    background-color: White;
+    position: absolute;
+    top: 125px;
+    left: 30%;
+    display: none;
+}
+.biaoti
+{
+    margin: 10px;
+    text-align: center;
+    color: #bf5e26;
+    font: 16px;
+    font-weight: bold;
+}
+.line01
+{
+    text-align: center;
+}
+.tablemr
+{
+    margin: 10px 5px 10px 5px;
+    border: 1px solid #5b8bcd;
+    font-size: 14px;
+}
+.tablemr .bk
+{
+    border-right: 1px solid #5b8bcd;
+    border-bottom: 1px solid #5b8bcd;
+}
+.tablemr .bk1
+{
+    border-right: 1px solid #5b8bcd;
+}
+.quedingt
+{
+    float: left;
+    padding-left: 140px;
+    font-size: 12px;
+}
+.quedingt a
+{
+    text-decoration: none;
+    background: url(/css/DiskN/images/qd.png) no-repeat;
+    display: block;
+    padding: 5px 16px 10px 16px;
+    color: #fff;
+}
+.quedingt a:hover
+{
+    background: url(/css/DiskN/images/qd1.png) no-repeat;
+    text-decoration: underline;
+}
+.quxiaot
+{
+    float: left;
+    padding-left: 20px;
+    font-size: 12px;
+}
+.quxiaot a
+{
+    text-decoration: none;
+    background: url(/css/DiskN/images/qx.png) no-repeat;
+    display: block;
+    padding: 5px 16px 10px 16px;
+    color: #000;
+}
+.quxiaot a:hover
+{
+    background: url(/css/DiskN/images/qx1.png) no-repeat;
+    text-decoration: underline;
+}

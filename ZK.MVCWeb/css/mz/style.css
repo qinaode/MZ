@@ -1,0 +1,8 @@
+/* CSS Document */
+
+.gg_tanchu{ width:630px; margin:0 auto; text-align:center; height:830px; background:#e3e3e3 url(/images/mz/ggtc.png) no-repeat; font-size:16px; color:#4b4b4b;}
+.gg_tanchu table{ width:500px; margin:0 auto; text-align:left; padding:60px 0 0 0;}
+.gg_tanchu table tr td{ padding:6px 0;}
+.gg_tanchu table img{border:3px solid #61869e; border-radius:100px;}
+.tc_line{ width:500px; margin:30px auto 0 auto; text-align:left;}
+.tc_line p{ padding-top:20px; line-height:36px;}

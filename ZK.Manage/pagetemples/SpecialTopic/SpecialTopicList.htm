@@ -1,0 +1,54 @@
+﻿  <table width="100%" class="tableform text-center" border="0" cellspacing="0">
+            <tr class="userList" align="left">
+              <td style="display:none;">
+                 </td>
+                 <td style=" width:15px;">
+                 </td>
+                <td >
+                    选择
+                </td>
+                <td>
+                    专题名称
+                </td>
+                                
+                <td>
+                    专题描述
+                </td>
+                <td>
+                    操作
+                </td>
+            </tr>
+    {#foreach $T as record} {#if '1'=='1'}
+    <tr align="left" class="nodeList" style="hover: background-color: #F8F7EF;">
+        <td style="display:none;">
+            <a id="A1">{$T.record.isOpen}</a>
+        </td>
+        <td style=" width:15px;">
+                 </td>
+         <td>
+            <input type="checkbox" name="checkbox_1" id="{$T.record.id}" onclick="CheckOne()" />
+        </td>
+        <td>
+            <a id="lab_{$T.record.id}">{$T.record.TypeName}</a>
+        </td>
+        <td>
+            <a id="lab_2{$T.record.id}">{$T.record.TypeDesc}</a>
+        </td>
+        <td>              
+                 {#if  $T.record.isOpen==false}
+                    <a  id="lock_{$T.record.id}" onclick="IsLock(this.id,'lock');" ><img src="../../image/unlock.gif"  width="9" height="9" />启用</a>
+                 {#else}
+                    <a  id="unck_{$T.record.id}" onclick="IsLock(this.id,'unlock');"><img src="../../image/lock.gif"   width="9" height="9" />锁定</a>
+                 {#/if}
+                    <a  id="edit_{$T.record.id}" onclick="SpecialTopicEdit(this.id);">
+                                          <img src="../../image/mof.gif"  width="9" height="9"  />修改</a>
+                            <a  id="Delete_{$T.record.id}" onclick="DeleteCheckedItems_ＭoralResource(this.id)"><img src="../../image/del3.gif" width="9" height="9" />删除</a>
+                <a  id="img_{$T.record.id}" onclick="ImgEdit(this.id,'Img');">
+                                    <img src="../../image/addchild.gif"  width="9" height="9"  />专题图片管理</a> 
+                      <a  id="res_{$T.record.id}" onclick="ResEdit(this.id,'Res');">
+                                    <img src="../../image/addchild.gif"  width="9" height="9"  />专题资源管理</a>                    
+
+        </td>
+    </tr>
+    {#else} {#/if} {#/for}
+</table>

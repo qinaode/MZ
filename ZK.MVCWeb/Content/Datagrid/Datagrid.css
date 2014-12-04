@@ -1,0 +1,135 @@
+﻿/*全局样式开始*/
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+a
+{
+    color: #000;
+    text-decoration: none;
+}
+ul
+{
+    list-style-type: none;
+}
+/*全局样式结束*/
+.filelist
+{
+    height: auto; /* overflow-y:scroll;*/
+}
+.datalist
+{
+    list-style-type: none;
+    height: 40px;
+    line-height: 40px; /*width: 100%;*/
+    font-size: 12px;
+    padding-left: 40px;
+    border-bottom: solid 1px #ccc;
+}
+.datalist:hover
+{
+    background: #f2f7ff;
+}
+.datalisthover
+{
+    background: #f2f7ff;
+}
+.header
+{
+    font-size: 12px;
+    list-style-type: none;
+    height: 40px;
+    line-height: 40px; /*width: 100%;*/
+    background: #f1f1f1;
+    border:none;
+    border-bottom: solid 1px #ccc;
+    padding-left: 40px;
+}
+
+.header li
+{
+    float: left;
+}
+.datalist li
+{
+    float: left;
+}
+.fname
+{
+    width: 50%;
+    position: relative;
+}
+
+.fname a:hover
+{
+    color: #f87b50;
+    text-decoration: underline;
+}
+.fsize
+{
+    width: 20%;
+}
+.mtime
+{
+    width: 30%;
+}
+.n
+{
+    margin-left: 20px;
+}
+/*checkbox图标*/
+.off
+{
+    background: url(../images/btn_icon.gif) no-repeat -113px 0px;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: -25px;
+    top: 13px;
+}
+.on
+{
+    background: url(../images/btn_icon.gif) no-repeat -113px -19px;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: -25px;
+    top: 13px;
+}
+/*
+        新建文件夹，行内编辑模式样式
+        */
+.txt
+{
+    margin: -2px 3px 0 0;
+    padding: 2px 3px;
+    height: 18px;
+    vertical-align: middle;
+    border: 1px solid #D2D2D2;
+    background: white;
+    width: 200px;
+    outline: none;
+}
+.btn_ok
+{
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    background: url(../images/newbtn.png) no-repeat 0 0;
+    position: absolute;
+    top: 9px;
+    left: 235px;
+}
+.btn_cancle
+{
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    background: url(../images/newbtn.png) no-repeat -22px 0;
+    position: absolute;
+    top: 9px;
+    left: 265px;
+}

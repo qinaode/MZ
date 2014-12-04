@@ -1,0 +1,63 @@
+﻿        <table width="100%" class="tableform text-center" border="0" cellspacing="0" >
+            <tr class="userList" align="left" >
+              <td style="display:none;">
+                 </td>
+                 <td style=" width:15px;">
+                 </td>
+                <td  >
+                    名称
+                </td>
+                <td>
+                    路径
+                </td>                                
+                <td>
+                    上级目录
+                </td>
+                <td >
+                    文件夹
+                </td>
+                <td>
+                    所有者
+                </td>                                
+                <td>
+                    文件类型
+                </td>
+                <td>
+                    操作
+                </td>
+            </tr>
+    {#foreach $T as record} {#if '1'=='1'} 
+    <tr align="left" class="nodeList" style="hover: background-color: #F8F7EF;">
+        <td>
+            <a id="A1">{$T.record.ID}</a>
+        </td>
+            <td style=" width:15px;">
+                 </td>
+        <td>
+            <a id="lbName_{$T.record.ID}">{$T.record.fileName}</a>
+        </td>
+        <td>
+            <a id="lbPath_{$T.record.ID}">{$T.record.imageURL}</a>
+        </td>
+        <td>
+            <a id="lbParent_{$T.record.ID}">{$T.record.typeID}</a>
+        </td>
+        <td>
+            <a id="lbDir_{$T.record.ID}">{$T.record.fileID}</a>
+        </td>
+        <td>
+            <a id="lbOwner_{$T.record.ID}">{$T.record.USERNAME}</a>
+        </td>
+        <td>
+            <a id="lbType_{$T.record.ID}">{$T.record.fileType}</a>
+        </td>
+        <td>
+            <!--<input type="button" value="删除" onclick="DeleteCheckedItems_ＭoralResource(this.id)"
+                id="Delete_{$T.record.fileID}" />-->
+                <a  id="Delete_{$T.record.fileID}" onclick="DeleteCheckedItems_ＭoralResource(this.id)"><img src="../../image/del3.gif" width="9" height="9" />删除</a>
+               <a onclick="SendCheckedItems_AdminResource(this.id)" id="Send_{$T.record.fileID}"><img src="../../image/onebit_27.png" width="9" height="9" />推送</a>
+           
+        </td>
+    </tr>
+    {#else} {#/if} {#/for}
+</table>

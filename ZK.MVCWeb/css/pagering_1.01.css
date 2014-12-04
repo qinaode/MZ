@@ -1,0 +1,120 @@
+﻿
+/*自己风格
+.page
+{
+    text-decoration: none;
+    margin-right: 10px;
+}
+.pagevisited
+{
+    color:#E0426E;
+}
+*/
+/*拍拍网风格
+.page { font: 11px Arial, Helvetica, sans-serif;padding:10px 20px 10px 0; margin: 0px;}
+.page a {padding: 1px 6px; border: solid 1px #ddd; background: #fff; text-decoration: none;margin-right:2px}
+.pagevisited {padding: 1px 6px; border: solid 1px #ddd; background: #fff; text-decoration: none;}
+.page .cpb {padding: 1px 6px;font-weight: bold; font-size: 13px;border:none}
+.page_hover {
+	color: #fff;
+	border-color:#3366CC;
+	text-decoration: none;
+	background-color: #3366CC;
+}
+*/
+/*淘宝风格*/
+/*.page
+{
+	font: 12px Arial, Helvetica, sans-serif;
+	padding: 10px 20px 10px 0;
+	margin: 0px;
+}
+.page a
+{
+	border: solid 1px #ccc;
+	color: #0063dc;
+	cursor: pointer;
+	text-decoration: none;
+}
+.page a:visited
+{
+	padding: 1px 6px;
+	border: solid 1px #ddd;
+	background: #fff;
+	text-decoration: none;
+}
+.page .cpb
+{
+	border: 1px solid #F50;
+	font-weight: 700;
+	color: #F50;
+	background-color: #ffeee5;
+}
+.page a:hover
+{
+	border: 1px solid #3366CC;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #3366CC;
+}
+.page a, .page a:visited, .page .cpb, .page a:hover
+{
+	
+	height: 16px;
+	line-height: 16px;
+	min-width: 10px;
+	_width: 10px;
+	margin-right: 5px;
+	text-align: center;
+	white-space: nowrap;
+	font-size: 12px;
+	font-family: Arial,SimSun;
+	padding: 0 3px;
+}*/
+/*博客园风格*/
+.pagelb
+{
+    font-size: 13px;
+    text-align: center;
+    color: #2E6AB1;
+    line-height: 200%;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+.page
+{
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid #9AAFE5;
+    color: #2E6AB1;
+    padding: 2px 5px;
+    text-decoration: none;
+    margin-right: 6px;
+    margin-left: 6px;
+    width: 10px;
+    height: 5px;
+}
+.pagebutton
+{
+    /*background-color: #CAF2FD;*/
+     margin-right: 8px;
+    margin-left: 8px;
+}
+
+.pagevisited
+{
+    color: #E0426E;
+    border-color:#9AAFE5;
+}
+.pagecurrent
+{
+    background-color: #2E6AB1;
+    border: 1px solid navy;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 2px 5px;
+}
+.page_hover
+{
+    background-color: #CAF2FD;
+}

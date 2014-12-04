@@ -1,0 +1,74 @@
+.content {
+	padding: 5px;
+	overflow: hidden;
+	min-width:1000px;
+}
+.content .pagePath {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #7CCF8F;
+	line-height: 30px;
+	text-indent: 15px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	background-color: #ECF5FA;
+}
+.content .cardpublicop ul li {
+	float: left;
+	list-style-type: none;
+	background-color: #eeeef9;
+	margin: 20px;
+	padding: 5px;
+	height: 130px;
+	width: 190px;
+	border: 1px solid #c0bfe7;
+	background-image: url(../image/corn_cardop.png);
+	background-repeat: no-repeat;
+	background-position: 50px 0px;
+}
+.content .cardpublicop {
+	overflow: hidden;
+	margin-right: auto;
+	margin-left: auto;
+	clear: both;
+	width: 1000px;
+	padding: 10px;
+	font-family: "微软雅黑";
+}
+.cardpublicop ul li .tittext {
+	font-size: 30px;
+	padding: 10px;
+	border: 1px solid #dcdcf1;
+	text-align: center;
+}
+.content .cardpublicop ul li .cpoOthbt {
+	border: 1px solid #dcdcf1;
+	margin: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.content .cardpublicop ul li a {
+	text-decoration:none;
+}
+.content .searchform {
+	line-height: 30px;
+	margin-top: 2px;
+	background-color: #F9FCFD;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #7CCF8F;
+}
+.content .pageInfo {
+	line-height: 30px;
+	background-color: #F9FCFD;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #7CCF8F;
+	margin-top: 2px;
+	overflow: hidden;
+}
+.content .pageInfo .fr .pno {
+	padding-right: 5px;
+	padding-left: 5px;
+	border: 1px solid #CCC;
+}

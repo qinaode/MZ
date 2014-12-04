@@ -1,0 +1,197 @@
+﻿ .style1
+        {
+            height: 22px;
+        }
+        
+        .style2
+        {
+            width: 54px;
+        }
+        # husertab
+        {
+            border: 1px solid Gray;
+            border-top-width: 0px;
+        }
+        #tr_head1
+        {
+            background-color: #CCCCCC;
+        }
+        
+        a
+        {
+            text-decoration: none;
+        }
+        #gusertab td
+        {
+            text-align: center;
+            vertical-align: middle;
+        }
+        #jqi td
+        {
+            text-align: center;
+            vertical-align: middle;
+        }
+        #tr_head2 td
+        {
+            border-bottom: 2px solid #585858;
+            border-left: 1px solid #BDBDBD;
+            border-right: 1px solid #BDBDBD;
+        }
+        #tr_head1 td
+        {
+            border-bottom: 1px solid #BDBDBD;
+            border-left: 1px solid #BDBDBD;
+            border-right: 1px solid #BDBDBD;
+        }
+        
+        .ltrborder td
+        {
+            border-top: 1px solid #BDBDBD;
+            border-left: 1px solid #BDBDBD;
+            border-right: 1px solid #BDBDBD;
+        }
+        .lrbborder td
+        {
+            border-bottom: 1px solid #BDBDBD;
+            border-left: 1px solid #BDBDBD;
+            border-right: 1px solid #BDBDBD;
+        }
+        .lrborder td
+        {
+            border-left: 1px solid #BDBDBD;
+            border-right: 1px solid #BDBDBD;
+        }
+        .style3
+        {
+            width: 40px;
+        }
+        
+        .clear
+        {
+            clear: both;
+        }
+        .gonggao
+        {
+            padding: 0px;
+            margin: 0px;
+            height: 516px;
+            width: 640px;
+        }
+        .title
+        {
+            width: 650px;
+            background: #7b7b7b;
+            margin: 0px;
+            padding: 10px 10px 10px 20px;
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .shut
+        {
+            float: right;
+        }
+        .content
+        {
+            margin: 10px 0px 10px 30px;
+        }
+        .left
+        {
+            float: left;
+        }
+        .tit2
+        {
+            margin-top: 10px;
+            width: 251px;
+            height: 373px;
+            border: 1px solid #cfcfcf;
+            background: url(/imagesN/sharepage/title_bg.jpg) no-repeat;
+        }
+        .titu
+        {
+            margin-top: 10px;
+            overflow: auto;
+            width: 570px;
+            height: 373px;
+            border: 1px solid Gray;
+        }
+        .bumen
+        {
+            float: left;
+            height: 36px;
+            width: 102px;
+            margin-left: 15px;
+            margin-top: 7px;
+            padding-top: 12px;
+            font-weight: bold;
+            text-align: center;
+            background: url(/imagesN/sharepage/title1.png) no-repeat;
+        }
+        .member
+        {
+            float: left;
+            height: 36px;
+            width: 101px;
+            margin-left: 15px;
+            margin-top: 7px;
+            padding-top: 12px;
+            font-weight: bold;
+            text-align: center;
+            color: #fff;
+            background: url(/imagesN/sharepage/title2.png) no-repeat;
+        }
+        .center
+        {
+            float: left;
+            margin: 200px 10px 0px 10px;
+        }
+        .right
+        {
+            float: right;
+        }
+        .rightcont
+        {
+            margin-top: 10px;
+            width: 300px;
+            height: 373px;
+            border: 1px solid #cfcfcf;
+        }
+        .foote
+        {
+            height: 50px;
+            background: #eff4f8;
+        }
+        #gusertab
+        {
+            width: 100%;
+        }
+       .dv_sp 
+       {
+          height: 10px;
+           width: 100%; 
+           }
+        #groupul 
+        {
+            float:left;
+            }  
+        ul
+        {
+          padding:1px;
+          margin:0px 0px 0px 5px;
+        }
+        ul li
+        {
+            padding:1px;
+            margin:0 auto;
+         
+            }
+       ul li ul
+        {
+            padding:1px;
+          margin:1px 2px 2px 14px;
+            }
+             ul li ul li
+        {
+            padding:1px;
+          margin:1px 2px 2px 16px;
+            }

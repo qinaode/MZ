@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<meta content="no-cache" http-equiv="Pragma">
+		<meta content="-1" http-equiv="Expires">
+		<meta content="no-cache" http-equiv="Cache-Control">
+		<meta id="viewport" name="viewport" content="width=device-width,initial-scale=1.0,target-densitydpi=high-dpi">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+		<link rel="apple-touch-icon" href="imgs/icon.png" />
+		<link rel="apple-touch-icon-precomposed" href="imgs/icon.png" />
+		<link rel="apple-touch-startup-image" href="startup.png" />
+		<link rel="stylesheet" href="css/ui-btn.css">
+		<link rel="stylesheet" href="css/ui-base.css">
+		<link rel="stylesheet" href="css/ui-box.css">
+		<link rel="stylesheet" href="css/ui-color.css">
+		<link rel="stylesheet" href="css/ui-res.css">
+		<link rel="stylesheet" href="css/sail.css" type="text/css" />
+		<link rel="stylesheet" href="css/hl.css" type="text/css" />
+		<link rel="stylesheet" href="css/jquery.mobile.css" type="text/css" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<script src="js/jquery.js"></script>
+		<!-- 		<script src="js/jquery.mobile.js"></script> -->
+		<script src="js/jqueryMobile.js"></script>
+		<script src="js/jquery.easing.js"></script>
+		<script src="js/jquery.transit.min.js"></script>
+		<script src="js/require.js"></script>
+		<script src="js/ssdjs.js"></script>
+		<script src="js/socket.io.js"></script>
+		<script src="js/iscroll.js"></script>
+		<script src="js/json2.js"></script>
+		<script src="js/hl.main.js"></script>
+		<script src="js/hl.cfg.js"></script>
+		<script src="js/parcycle.js"></script>
+		<script src="src/biz/chat.js"></script>
+		<script src="src/biz/login.js"></script>
+		<script src="src/biz/person.js"></script>
+		<script src="src/biz/disk.js"></script>
+		<script src="src/biz/diskAll.js"></script>
+		<script src="src/biz/group.js"></script>
+		<script src="src/biz/hb.js"></script>
+		<script src="src/biz/more.js"></script>
+		<script src="src/biz/user.js"></script>
+		<script src="src/biz/user2.js"></script>
+		<script src="src/data/chat.js"></script>
+		<script src="src/data/disk.js"></script>
+		<script src="src/data/pub.js"></script>
+		<script src="src/data/user.js"></script>
+		<script src="src/util/diag.js"></script>
+		<script src="src/util/file.js"></script>
+		<script src="src/util/fileMgr.js"></script>
+		<script src="src/util/loading.js"></script>
+		<script src="src/util/sys.js"></script>
+		<script src="src/util/tpl.js"></script>
+		<title>皓联教育</title>
+		<style type="text/css" media="screen">
+			/*
+			 CSS rules to use for styling the overlay:
+			 .chromeFrameOverlayContent
+			 .chromeFrameOverlayContent iframe
+			 .chromeFrameOverlayCloseBar
+			 .chromeFrameOverlayUnderlay
+			 */
+		</style>
+	</head>
+	<body style='OVERFLOW:SCROLL;OVERFLOW:HIDDEN'>
+		<div id="main" style="z-index:1"></div>
+	<!-- 	<div id="wrapper"  style="z-index:9">
+		<div data-role="page" id="person"></div>
+		<div data-role="page" id="user"></div>
+		<div data-role="page" id="disk">
+		"dddd"
+		</div>
+		<div data-role="page" id="more"></div>
+		</div> -->
+		<div id="pop"  style="display:none; z-index:10"></div>
+		<div id="iMenu" class="absolute" style="display:none; z-index:10"></div>
+		<div id="chat"  style="display:none; z-index:10"></div>
+		<div id="up"  style="display:none ;z-index:10"></div>
+		<div id="confirm"  style="display:none; z-index:10"></div>
+		<div id="iLoading" style="display:none">
+			<div id="loadingBg"></div>
+			<div id="loadingContent"></div>
+		</div>
+		<div id="info" class="absolute" style="z-index:2500"></div>		
+		<script>
+            var hl = (hl || {});
+            hl.CLOSE_OPT = 0;
+            hlRelease = false;
+
+            var hlscreenval = null;
+            var hlland = null;
+            function hlscreen() {
+                if(hlscreenval == null) {
+                    hlscreenval = {
+                        sw : window.screen.width,
+                        sh : window.screen.height,
+                        x : window['innerWidth'] || document.documentElement.clientWidth,
+                        y : window['innerHeight'] || document.documentElement.clientHeight
+                    };
+                }
+                return hlscreenval;
+            }
+
+            function hl$(id) {
+                return document.getElementById(id);
+            }
+
+            function hlSize() {
+                return {
+                    x : window['innerWidth'] || document.documentElement.clientWidth,
+                    y : window['innerHeight'] || document.documentElement.clientHeight
+                }
+            }
+
+            function mainTest() {
+                resize();
+                hl.biz.login.init();
+            }
+
+
+            document.addEventListener('DOMContentLoaded', mainTest, false);
+
+            function isTouch() {
+                if('ontouchstart' in window) {
+                    return true;
+                }
+                if('createTouch' in document) {
+                    return true;
+                }
+                return false;
+            }
+		</script>
+	</body>
+</html>

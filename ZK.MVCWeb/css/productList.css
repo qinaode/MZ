@@ -1,0 +1,304 @@
+.cont {
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow:hidden;
+}
+.cont .plMain {
+	float: left;
+	width: 770px;
+	padding: 5px;
+}
+.cont .plMain #pageUrl {
+	line-height: 30px;
+}
+.cont .plMain #pageUrl a {
+	color: #33C;
+}
+.cont .plMain .condition {
+	background-color: #F9F9F9;
+	border: 1px solid #CCC;
+	overflow: hidden;
+}
+.cont .plMain .condition .condTit {
+	line-height: 35px;
+	padding-left: 10px;
+	font-size: 14px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	background-color: #F2F2F2;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #FFF;
+	overflow: hidden;
+}
+.cont .plMain .condition .condCont .cateLi {
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #CCC;
+	overflow: hidden;
+	padding: 5px;
+	line-height: 25px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+.cont .plMain .condition .condCont .cateLi dt {
+	float: left;
+	text-align: right;
+	width: 90px;
+	padding-right: 10px;
+}
+.cont .plMain .condition .condCont .cateLi dd {
+	float: left;
+	width: 540px;
+}
+.cont .plMain .condition .condCont .cateLi dd ul li {
+	margin-right: 25px;
+	float: left;
+}
+.cont .plMain .condition .condCont .cateLi dd ul li a {
+	color: #33c;
+}
+.cont .plMain .pSort {
+	padding: 2px;
+	height: 26px;
+	background-color: #FAFAFA;
+	border: 1px solid #EAEAEA;
+	margin-top: 10px;
+}
+.cont .plMain .pSort .viewMode {
+	float: left;
+	background-image: url(../images/product/viewModeDot.gif);
+	background-repeat: no-repeat;
+	background-position: 5px 4px;
+	text-indent: 22px;
+	line-height: 18px;
+	border: 1px solid #CCC;
+	padding-right: 5px;
+	margin-top: 3px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.cont .plMain .pSort .sortMode {
+	float: left;
+	margin-left: 50px;
+	background-image: url(../images/product/selectBakg.gif);
+	height: 22px;
+	width: 150px;
+	background-repeat: no-repeat;
+	background-position: right 2px;
+	line-height: 22px;
+	position: relative;
+}
+.cont .plMain .pSort .sortMode .options {
+	display: none;
+	background-color: #FFF;
+	overflow: hidden;
+	position: absolute;
+	padding: 5px;
+	width: 138px;
+	border: 1px solid #CCC;
+}
+.cont .plMain .pSort .area {
+	float: left;
+	margin-left: 50px;
+}
+.cont .plMain .pSort .sortMode .tit {
+	float: left;
+}
+.cont .plMain .pSort .sortMode .default {
+	padding-left: 15px;
+}
+.cont .plMain .pSort .sortMode .options.current {
+	display: block;
+}
+.cont .plMain .pSort .area {
+	float: left;
+	margin-left: 50px;
+	background-image: url(../images/product/selectBakg_s.jpg);
+	height: 22px;
+	width: 80px;
+	background-repeat: no-repeat;
+	background-position: 2px;
+	line-height: 22px;
+	position: relative;
+	text-indent: 15px;
+}
+.cont .plMain .pSort .area .areaLi {
+	display: none;
+	position: absolute;
+	background-color: #FFF;
+	border: 1px solid #EAEAEA;
+	width: 320px;
+}
+.cont .plMain .pSort .sortMode .options #def {
+	text-align: center;
+}
+.cont .plMain .pSort .area .areaLi.current {
+	display: block;
+}
+.cont .plMain .pSort .area .areaLi dt #areaSearch {
+	float: left;
+	margin-left: 10px;
+	width: 100px;
+}
+.cont .plMain .pSort .area .areaLi dt #asBt {
+	float: left;
+}
+.cont .plMain .pSort .area .areaLi dt {
+	padding: 5px;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #CCC;
+	overflow: hidden;
+}
+.cont .plMain .pSort .area .areaLi dd {
+	margin: 5px;
+	float: left;
+	border: 1px solid #F0F0F0;
+	line-height: 25px;
+	width: 60px;
+}
+.cont .plMain .productList li {
+	float: left;
+	padding-top: 10px;
+	padding-left: 9px;
+	width: 247px;
+}
+.cont .plMain .productList li:hover {
+	background-color:#EEF7EE;
+}
+.cont .plMain .productList li #pTit {
+	color: #30F;
+	font-size: 14px;
+	height: 50px;
+}
+.cont .plMain .productList li #pPrice #ppDot {
+	color: #C00;
+}
+.cont .plMain .productList li #pPrice #ppValue {
+	font-size: 24px;
+	line-height: 30px;
+	color: #C00;
+	float: left;
+}
+.cont .plMain .productList li #pPrice #attention {
+	color: #F90;
+	float: right;
+	line-height: 30px;
+}
+.cont .plMain .productList li #pPrice #ppDot {
+	float: left;
+	padding-top: 5px;
+}
+.cont .plMain .productList li #pPrice {
+	clear: both;
+	overflow: hidden;
+	padding-left: 10px;
+}
+.cont .plMain .productList li #pPic {
+	padding: 2px;
+	height: 231px;
+	width: 231px;
+	border: 1px solid #EAEAEA;
+	text-align: center;
+}
+.cont .plMain .productList li #pOthPrice {
+	text-align: center;
+}
+.cont .plMain .productList li #pTit a {
+	color: #30F;
+}
+.cont .plMain .pageInfo .othWord #appoint {
+	width: 50px;
+}
+.cont .plMain .pageInfo {
+	clear: both;
+	padding-top: 15px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	overflow: hidden;
+	line-height: 28px;
+}
+.cont .plMain .pageInfo .pageNo {
+}
+.cont .plMain .pageInfo .pageNo {
+	float: right;
+}
+.cont .plMain .pageInfo .pageNo li {
+	float: left;
+	border: 1px solid #EAEAEA;
+	margin-left: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.cont .plMain .pageInfo .othWord {
+	float: right;
+}
+.cont .plMain .condition .condCont .cateLi dd ul .current {
+	background-color: #FFF;
+	border: 1px dashed #CCC;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.cont .plMain .condition .condTit .tit {
+	float: left;
+}
+.cont .plMain .condition .condTit .condWord {
+	float: left;
+	padding-left: 15px;
+}
+.cont .plMain .condition .condTit .condWord li {
+	line-height: 20px;
+	background-color: #CFC;
+	border: 1px dashed #CCC;
+	margin-top: 5px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.cont .plRight {
+	float: right;
+	width: 214px;
+	border: 1px solid #CCC;
+	margin-top: 8px;
+}
+.cont .plRight dt {
+	background-color: #EEF7EE;
+	font-size: 16px;
+	text-align: center;
+	font-family: "微软雅黑";
+	margin-top: 1px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+}
+.cont .plRight dd {
+	text-align: center;
+}
+.cont .plRight dd .title a {
+	color: #30F;
+	font-size: 14px;
+}
+.cont .plRight dd .pValue {
+	font-family: "微软雅黑";
+	font-size: 20px;
+	color: #C00;
+	line-height: 30px;
+}
+.cont .plRight dd .saleCount {
+}
+.cont .plRight dd {
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #CCC;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 1px;
+}
+.cont .plRight dd:hover {
+	background-color: #EEF7EE;
+}

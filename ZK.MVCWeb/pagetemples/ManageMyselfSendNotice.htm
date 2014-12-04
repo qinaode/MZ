@@ -1,0 +1,13 @@
+﻿<table>
+<tr><th>标题</th>
+<th>发送时间</th>
+<th>操作</th></tr>
+{#foreach $T as record } 
+<tr>
+<td>{$T.record.TITLE}</td>
+<td>{$T.record.SENDTIME}</td>
+<td><a id='del_{$T.record.SID}' onclick='DelNotice(this.id)' >删除</a><a id='sta_{$T.record.SID}' onclick='StateNotice(this.id)' >查看状态</a></td>
+</tr>
+<#/for>
+</table>
+

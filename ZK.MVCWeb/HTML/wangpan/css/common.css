@@ -1,0 +1,31 @@
+/* CSS Document */
+body,div,span,img,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,input,textarea,select,option,fieldset,legend,p,th,td{margin:0; padding:0;}
+fieldset,img {border: 0;}
+a{text-decoration:none; color:#4d4d4d;}
+a:hover{text-decoration:underline;}
+.clear{clear:both;}
+ul,li{list-style:none;}
+body{ font-family:'微软雅黑'; background:#fafafa; color:#4d4d4d; font-size:14px; line-height:20px;}
+.yellow{color:#fa9300;}
+.yellow a{color:#fa9300;}
+.blue{color:#418add;}
+.blue a{color:#418add;}
+.red{color:#f30000;}
+.red a{color:#f30000;}
+.green{color:#39a60d;}
+.grren a{color:#39a60d;}
+.displaynone{display:none;}
+/*header*/
+.topbar_wrap{height:50px; background:#4dc708; border-bottom:1px solid #e1e1e1; font-size:12px; color:#ffffff;}
+.topbar{width:100%; height:50px; margin:0 auto; text-align:right; line-height:31px;}
+.topbar h1{width:268px; height:50px; background:url(../images/logo_wangpan.png) no-repeat; position:absolute; left:20px; top:0px;}
+.topbar a{color:#ffffff;}
+.topbar p{padding-right:20px; padding-top:15px;}
+
+.main_wrap{float:left; width:15%; background:#f5f5f5; margin:0px;}
+.main{margin:20px;}
+.main li{
+	padding:15px;
+	color: #aee290;}
+.main li a{padding-left:8px;}
+.main li a:hover{background:url(../images/zuoce_bg.png) no-repeat; text-decoration:none;}

@@ -1,0 +1,46 @@
+﻿  <table width="100%" class="tableform text-center" border="0" cellspacing="0">
+            <tr class="userList" align="left">
+              <td style="display:none;">
+                 </td>
+                 <td style=" width:15px;">
+                 </td>
+                <td >
+                    选择
+                </td>
+                <td>
+                    图片路径
+                </td>
+                                
+                <td>
+                    图片链接
+                </td>
+                <td>
+                    操作
+                </td>
+            </tr>
+    {#foreach $T as record} {#if '1'=='1'}
+    <tr align="left" class="nodeList" style="hover: background-color: #F8F7EF;">
+        <td style="display:none;">
+            <a id="A1">{$T.record.id}</a>
+             <a id="A2">{$T.record.fileJPTypeID}</a>
+        </td>
+        <td style=" width:15px;">
+                 </td>
+         <td>
+            <input type="checkbox" name="checkbox_1" id="{$T.record.id}" onclick="CheckOne()" />
+        </td>
+        <td>
+            <a id="lab_{$T.record.id}">{$T.record.imageName}</a>
+        </td>
+        <td>
+            <a id="lab_2{$T.record.id}">{StringFormat.IsNullOrEmpty($T.record.imageURL)}</a>
+        </td>
+        <td>              
+                <a  id="{$T.record.id}" onclick="Move1(this.id,'Up');"><img src="../../image/up2.gif"  width="9" height="9" />上移</a>
+                <a  id="{$T.record.id}" onclick="Move1(this.id,'Down');"><img src="../../image/down.gif"  width="9" height="9" />下移</a>
+                          <a  id="Delete_{$T.record.id}" onclick="DeleteCheckedItems_ＭoralResource(this.id)"><img src="../../image/del3.gif" width="9" height="9" />删除</a>
+             
+        </td>
+    </tr>
+    {#else} {#/if} {#/for}
+</table>

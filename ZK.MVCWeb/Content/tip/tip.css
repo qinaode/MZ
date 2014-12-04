@@ -1,0 +1,33 @@
+﻿.tip
+{
+    background: #f9edbe;
+    border: solid 2px #fbda91;
+    border-radius: 3px;
+    width: auto;
+    position: absolute;
+    top: 196px;
+    left: 300px;
+    display: none;
+}
+.tip .icon
+{
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background: url(/Content/images/btn_icon.gif);
+    margin: 5px 5px;
+}
+.tip .icon.error
+{
+    background-position: -44px -269px;
+}
+.tip .icon.ok
+{
+    background-position: -44px -225px;
+}
+.tip .msg
+{
+    font-size: 12px;
+    margin-top: 7px;
+    float: right;
+}

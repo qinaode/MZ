@@ -1,0 +1,35 @@
+﻿/* ------------------CSS 基本样式--------------------- */
+ ul, li, dl, dt, dd { margin: 0; padding: 0; }
+
+ul, li {list-style-type: none;}
+
+body {background:#fff;color:#333;/*overflow:hidden;whitespace:nowrap;text-overflow: ellipsis;*/}
+a{text-decoration:none;color:#275a8d; }
+a:active, a:hover {text-decoration:none;}
+a:focus {outline: none;}
+
+
+.span {
+    color:#848484;
+}
+.interval {
+margin-left:10px;
+}
+.link {
+clear:both; height:25px;margin:0 auto;padding-top:30px;float: right; display:inline; float:left;
+}
+.cpb
+{
+float:left; line-height:38px; margin-left:5px;
+    }
+    .othWord .pageNo
+    {
+       float:left;line-height:38px;
+        }
+.link a{
+    display:block; float:left; padding:8px; border:1px solid #ccc; margin-left:5px;
+}
+.link .current{border:none; color:#000; font-weight:bold;}
+.link a:hover{
+    border:none; color:#000; font-weight:bold;
+}

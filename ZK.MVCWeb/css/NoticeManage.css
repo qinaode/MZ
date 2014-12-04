@@ -1,0 +1,36 @@
+﻿       *{  border:0; margin: 0;padding: 0; font-family:微软雅黑; font-size:12px;}
+        bady{ background-color:#F0F0F0;}
+        .center{ margin: 0 auto;height:663px; 
+min-height:700px; width:900px;
+}
+        .div_ItemSelect{width:120px; height:680px; min-height:700px;  float:left;}
+        .div_not{float:left;width:780px;background-color:#F0F0F0; height: 502px; border:0;}
+        .div_NoticeContent{float:left;width:781px; height:200px;  padding-top:20px; 
+                             border:1px solid #F0F0F0; color:Black; vertical-align:middle; text-align:left;
+                              background-color:#FCFCFC;
+                             }
+        .div_ItemSelect ul{ background-color:White;padding-top:15px; padding-left:2px;}
+        .div_ItemSelect ul li{ list-style:none; display:inline-block; width:110px;min-height:44px; height:44px; }
+         .div_ItemSelect ul li a{ display:block; text-align:center; width:110px;min-height:30px; height:30px; padding-top:14px; border-bottom:1px solid #DCE1E6;cursor:hand; }
+         .div_ItemSelect ul li a:link{ text-decoration:none;color:Black;}
+          .div_ItemSelect ul li a:visited{ text-decoration:none; color:Black;}
+         .div_ItemSelect ul li a:hover{ background-color:#F0F0F0; background-color:#F0F0F0;cursor:pointer;}
+          .selected{ background-color:#74A8EF;}
+         .div_NoticeList{  margin-left:15px; margin-bottom:20px; width:750px; background-color:White; min-height:441px; height:441px;}
+         .div_NoticeList div table tr td { vertical-align:middle; text-align:center;}
+         .div_th {height:30px; padding-top:20px; background-color:#F0F0F0; }
+         .div_table{ padding-left:10px; border-bottom:1px solid #DEE3E7;  width:740px;}
+          .div_table tr{  cursor:pointer;}
+          .div_table:hover{ background-color:#D1F5A3}
+         #div_Pager{ padding-left:20px; }
+         #div_Pager .page{ margin-left:2px; margin-right:2px;}
+         #pagenum{ border:1px solid #DADADA;}
+       #div_Pager .pagelb {  margin-left:2px; margin-right:2px;}         
+      #div_NoticeContent ul li{ list-style-type:none;} 
+      a{ cursor:pointer;} 
+      .hightColor{ background-color:#E2E2E2;}
+      .noread{ font-weight:bold;}
+      
+       
+              
+          

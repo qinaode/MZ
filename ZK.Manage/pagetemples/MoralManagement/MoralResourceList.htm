@@ -1,0 +1,73 @@
+﻿<table width="100%" class="tableform text-center" border="0" cellspacing="0">
+    <tr align="left" class="userList" align="left">
+        <td class="userList" align="left">
+            <!--<input type="checkbox" value="全选" id="check_CheckAll" />&nbsp; &nbsp;<a id="a_CheckAll"
+                onclick="CheckAll()">全选 </a>-->
+        </td>
+        <td>
+            名称
+        </td>
+        <td>
+            路径
+        </td>
+        <td>
+            上级目录
+        </td>
+        <td>
+            文件夹
+        </td>
+        <td>
+            所有者
+        </td>
+        <td>
+            文件类型
+        </td>
+         <td style="width: 100px;">
+            操作
+        </td>
+        <td>
+            是否转码
+        </td>
+    </tr>
+    {#foreach $T as record} {#if '1'=='1'}
+    <tr align="left" class="nodeList" style="hover: background-color: #F8F7EF;">
+        <td>
+            <!--<input type="checkbox" name="checkbox_1" id="{$T.record.fileID}" />-->
+        </td>
+        
+        <td>
+            <a id="lbName_{$T.record.fileID}">{$T.record.fileName}</a>
+        </td>
+        <td>
+            <a id="lbPath_{$T.record.fileID}">{$T.record.filePath}</a>
+        </td>
+        <td>
+            <a id="lbParent_{$T.record.fileID}">{$T.record.parentID}</a>
+        </td>
+        <td>
+            <a id="lbDir_{$T.record.fileID}">{$T.record.isDir}</a>
+        </td>
+        <td>
+            <a id="lbOwner_{$T.record.fileID}">{$T.record.ownerID}</a>
+        </td>
+        <td>
+            <a id="lbType_{$T.record.fileID}">{$T.record.fileTypeID}</a>
+        </td>
+        <td>
+            <!--<input type="button" value="删除" onclick="DeleteCheckedItems_ＭoralResource(this.id)"
+                id="Delete_{$T.record.fileID}" />-->
+                <a  id="Delete_{$T.record.fileID}" onclick="DeleteCheckedItems_ＭoralResource(this.id)"><img src="../../image/del3.gif" width="9" height="9" />删除</a>
+               <a onclick="SendCheckedItems_AdminResource(this.id)" id="Send_{$T.record.fileID}"><img src="../../image/onebit_27.png" width="9" height="9" />推送</a>
+           
+        </td>
+        <td align="left">
+            {#if $T.record.fileTypeID==1||$T.record.fileTypeID==2||$T.record.fileTypeID==6||$T.record.fileTypeID==7}
+            <a onclick="ConvertCheckedItems_Resource({$T.record.fileID},{$T.record.fileTypeID})" >
+                <img src="../image/convert.png" width="12" height="12" />重新转码</a> {#else}
+            <label style="color: Gray" id="A2">
+                <img src="../image/convert.png" width="12" height="12" />不可转码</label>
+            {#/if}
+        </td>
+    </tr>
+    {#else} {#/if} {#/for}
+</table>

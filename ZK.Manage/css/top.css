@@ -1,0 +1,111 @@
+.top {
+	background-color: #ecf5fa;
+}
+.top .menuTop {
+	width: 1000px;
+}
+.top .menuTop .logo {
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	float: left;
+}
+.top .menuTop .userInfo {
+	float: right;
+	width: 870px;
+	text-align: right;
+}
+.top .menuTop .menuLi {
+	width: 870px;
+	float: right;
+}
+.top .menuTop .menuLi .mtli {
+	float: left;
+}
+.top .menuTop .menuLi .mtli {
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-right: 5px;
+	margin-left: 5px;
+	line-height: 28px;
+	cursor: pointer;
+}
+.top .menuTop .menuLi .mtli.current {
+	background-color: #062B4F;
+	color: #FFF;
+}
+.top .menuSec_bak {
+	clear: both;
+	background-color: #062B4F;
+}
+.top .menuSec_bak .menuSec {
+	width: 1000px;
+	height: 70px;
+	padding-top: 2px;
+}
+.top .menuSec_bak .menuSec .msli {
+	display: none;
+	position: relative;
+}
+.top .menuSec_bak .menuSec .current {
+	display: block;
+}
+.top .menuSec_bak .menuSec .msli.current .menuSec_c .msl_c {
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+	width: 80px;
+	text-align: center;
+	padding-top: 5px;
+	border: 1px solid #062B4F;
+	padding-bottom: 3px;
+	margin-top: 2px;
+	position: relative;
+}
+.top .menuSec_bak .menuSec .msli.current .menuSec_c .msl_c:hover {
+	background-color:#0A4683;
+	border: 1px solid #04203C;
+}
+.top .menuSec_bak .menuSec .msli.current .menuSec_c .msl_c a {
+	color: #FFF;
+	text-decoration:none;
+	
+}
+.top .menuSec_bak .menuSec .msli.current .menuSec_c .msl_c a img {
+}
+.top .menuSec_bak .menuSec .msli.current .menuSec_c .msl_c a br {
+}
+.top .menuSec_bak .menuSec .msli.current #morebt {
+	float: right;
+	color: #CCC;
+	margin-right: 20px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.top .menuSec_bak .menuSec .msli.current .menuSec_c {
+	float: left;
+	width: 950px;
+	height: 68px;
+	overflow: hidden;
+	border: 1px solid #062B4F;
+}
+.top .menuSec_bak .menuSec .msli.current .menuSec_c .msl_c #unopend {
+	position: absolute;
+	height: 70px;
+	width: 70px;
+	left: 0px;
+	top: 0px;
+	background-image: url(../image/unopend.png);
+}
+.top .menuSec_bak .menuSec .msli.current .menuSec_c .separate {
+	background-image: url(../image/topLine.gif);
+	float: left;
+	width: 1px;
+	height: 52px;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: 10px;
+}
+
+.footer { clear:both;margin:30px auto;padding:8px 0 0 0;width:400px;height:22px;border-top:1px solid #d7d7d7;text-align:center;font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#808080; }
+

@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AA6FBAE5-8392-48F4-AE85-879C905FAE5A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZK.IDAL</RootNamespace>
+    <AssemblyName>ZK.IDAL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IACCOUNTS.cs" />
+    <Compile Include="IACCOUNTSECTIONS.cs" />
+    <Compile Include="IADMINLOGS.cs" />
+    <Compile Include="IADMINS.cs" />
+    <Compile Include="ICommondBase.cs" />
+    <Compile Include="ICONTACTGROUPS.cs" />
+    <Compile Include="ICONTACTS.cs" />
+    <Compile Include="IDEPARTMENTS.cs" />
+    <Compile Include="IDEPARTUSERS.cs" />
+    <Compile Include="Ifile_base.cs" />
+    <Compile Include="Ifile_collection.cs" />
+    <Compile Include="IGROUPMEMBERS.cs" />
+    <Compile Include="IGROUPS.cs" />
+    <Compile Include="IGROUPSHAREFILES.cs" />
+    <Compile Include="IJOINGROUPREQUESTS.cs" />
+    <Compile Include="IJOINGROUPRESPONSES.cs" />
+    <Compile Include="IJOINREQUESTS.cs" />
+    <Compile Include="IJOINRESPONSES.cs" />
+    <Compile Include="Iminiyun_events.cs" />
+    <Compile Include="Iminiyun_files.cs" />
+    <Compile Include="Iminiyun_file_exifs.cs" />
+    <Compile Include="Iminiyun_file_metas.cs" />
+    <Compile Include="Iminiyun_file_star.cs" />
+    <Compile Include="Iminiyun_file_tags.cs" />
+    <Compile Include="Iminiyun_file_versions.cs" />
+    <Compile Include="Iminiyun_file_version_metas.cs" />
+    <Compile Include="Iminiyun_options.cs" />
+    <Compile Include="Iminiyun_share_files.cs" />
+    <Compile Include="Iminiyun_tags.cs" />
+    <Compile Include="Iminiyun_users.cs" />
+    <Compile Include="Iminiyun_user_metas.cs" />
+    <Compile Include="Iminiyun_user_privilege.cs" />
+    <Compile Include="IOFFGROUPMSGS.cs" />
+    <Compile Include="IOFFGROUPSUPEROBJS.cs" />
+    <Compile Include="IOFFLINEFILES.cs" />
+    <Compile Include="IOFFLINEMESSAGES.cs" />
+    <Compile Include="IOFFLINESUPEROBJECTS.cs" />
+    <Compile Include="Ipublic_files.cs" />
+    <Compile Include="IPWDPROTECTION.cs" />
+    <Compile Include="IRECENTITEMS.cs" />
+    <Compile Include="Isysdiagrams.cs" />
+    <Compile Include="ISYSMSGS.cs" />
+    <Compile Include="IUSERS.cs" />
+    <Compile Include="IView_AllFileList.cs" />
+    <Compile Include="IView_OtherFileList.cs" />
+    <Compile Include="IView_TeachFileList.cs" />
+    <Compile Include="IView_UserMessage.cs" />
+    <Compile Include="IWEBAPPS.cs" />
+    <Compile Include="IWEBVISITORMESSAGES.cs" />
+    <Compile Include="IWEBVISITORS.cs" />
+    <Compile Include="IWEBVISITORTOTAL.cs" />
+    <Compile Include="IZK_Channel.cs" />
+    <Compile Include="IZK_ChannelGroup.cs" />
+    <Compile Include="IZK_ChannelGroupAndFileList.cs" />
+    <Compile Include="IZK_Course.cs" />
+    <Compile Include="IZK_Edition.cs" />
+    <Compile Include="IZK_FileAndTags.cs" />
+    <Compile Include="IZK_FileExtend.cs" />
+    <Compile Include="IZK_FileJP.cs" />
+    <Compile Include="IZK_FileJPPic.cs" />
+    <Compile Include="IZK_FileJPType.cs" />
+    <Compile Include="IZK_FileList.cs" />
+    <Compile Include="IZK_FileListTra.cs" />
+    <Compile Include="IZK_FileType.cs" />
+    <Compile Include="IZK_FileVisitors.cs" />
+    <Compile Include="IZK_Grade.cs" />
+    <Compile Include="IZK_JXCategory.cs" />
+    <Compile Include="IZK_Lesson.cs" />
+    <Compile Include="IZK_LessonAndFileList.cs" />
+    <Compile Include="IZK_LessonClass.cs" />
+    <Compile Include="IZK_NT_MsgExtent.cs" />
+    <Compile Include="IZK_RoleList.cs" />
+    <Compile Include="IZK_RoleToUser.cs" />
+    <Compile Include="IZK_Tags.cs" />
+    <Compile Include="IZK_UserAndSysMsg.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZK.Model\ZK.Model.csproj">
+      <Project>{EF2909E8-3750-4324-B768-CC8A72151262}</Project>
+      <Name>ZK.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

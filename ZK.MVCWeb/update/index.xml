@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UpdatePatchs>
+	<Item>
+		<UpdateType>forced</UpdateType>
+		<Name>update_main.exe</Name>
+		<Description>主程序</Description>
+		<FileName>update_main.exe</FileName>
+		<Date>2014-4-14 02:46:00</Date>
+		<IsUpdateSelf>False</IsUpdateSelf>
+	</Item>
+</UpdatePatchs>

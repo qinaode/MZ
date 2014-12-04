@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<script type="text/javascript">
+            function abc() {
+                $.ajax({
+                    async : true,
+                    /*是否异步请求，用这对象的目的就是为了异步请求，所以此值一般不变，恒为true*/
+                    cache : false, /*是否用缓存*/
+                    global : true, /*是否触发已设置的全局事件，比如$("#id").ajaxStart()或
+                     $("#id").ajaxSend(),等事件*/
+                    timeout : 3000, /*定义请求超时时间，此设置覆盖全局，毫秒数*/
+                    username : "", /*定义服务器http请求用户名，跟服务器的设置有关*/
+                    password : "", /*定义服务器http请求密码，跟服务器的设置有关*/
+                    type : "post", /*定义发送数据的方式*/
+                    url : "jx.asp", /*定义请求的url*/
+                    data : {
+                        aa : "bb"
+                    }, /*要发往服务器的数据值对*/
+                    context : $(".m"), /* 指定回调函数中this指的是哪个对象，如果值写成
+                     document.body则对整个窗口文档有效，此处为用class选择的一个div，执行后会看
+                     到，该被选择的div在回调函数中用this来指代，从而实现了改变颜色，把这篇章
+                     的全部代码复制，再引好相应的jquery文件就可以执行*/
+                    beforeSend : function() {
+                        alert("请求之前");
+                    }, /* 发送请求之前要执行的函数*/
+                    dataType : "text", /*定义返回的数据类型*/
+                    success : function(aa) {
+                        alert(aa);
+                        $(this).css("background-color", "#666666");
+                    }, /*请求成功
+                     时要执行的函数，注意该函数的一个参数，且来捕捉返回数据*/
+                    complete : function(xhr, ts) {
+                        alert(ts);
+                    }, /*请求完成（不管是否成功）时执行的函数，
+                     注意该函数的两个参数的使用，后一个参数是请求的状态值，此处用alert()弹出
+                     ，这篇文章的代码执行后显示是success，表示请求是成功的*/
+                    error : function() {
+                        alert("发生了错误");
+                    }/*请求错误时执行的函数*/
+                });
+            }
+		</script>
+	</head>
+	<body>
+		<div id="d" name="id" style="width:200px; height:100px;">
+			bbb
+		</div>
+		<div class="m" name="m" style="width:200px; height:100px;">
+			bbb
+		</div>
+		<button id="ii" onclick="abc()">
+			加载
+		</button>
+	</body>
+</html>

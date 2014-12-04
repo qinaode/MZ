@@ -1,0 +1,83 @@
+﻿<table width="100%" class="tableform text-center" border="0" cellspacing="0">
+    <tr class="userList" align="left">
+      <td style=" width:15px;">
+                 </td>
+                <td style="width: 65px;">
+                    状态
+                </td>
+                <td>
+                    用户ID
+                </td>
+                <td>
+                    用户名
+                </td>
+                <td>
+                    昵称
+                </td>
+                <td>
+                    姓名
+                </td>
+                <td>
+                    性别
+                </td>
+                <td>
+                    年龄
+                </td>
+                <td>
+                    手机
+                </td>               
+                <td>
+                    职位
+                </td>
+                <td>
+                    登录数
+                </td>
+                <td>
+                    操作
+                </td>
+            </tr>
+    {#foreach $T as record} {#if '1'=='1'}
+    <tr align="left" class="nodeList" style="hover: background-color: #F8F7EF;">
+      <td style=" width:15px;">
+                 </td>
+       <td height="28">
+                        </td>
+        
+        <td>
+            <a id="lbName_{$T.record.userid}">{$T.record.userid}</a>
+        </td>
+        <td>
+            <a id="lbPath_{$T.record.userid}">{$T.record.username}</a>
+        </td>
+        <td>
+            <a id="lbParent_{$T.record.userid}">{$T.record.nickname}</a>
+        </td>
+        <td>
+            <a id="lbDir_{$T.record.userid}">{$T.record.actualname}</a>
+        </td>
+        <td>
+            <a id="lbOwner_{$T.record.userid}">{$T.record.sex}</a>
+        </td>
+        <td>
+            <a id="lbType_{$T.record.userid}">{$T.record.age}</a>
+        </td>
+        <td>
+            <a id="A1">{$T.record.mobile}</a>
+        </td>
+        <td>
+            <a id="A2">{$T.record.jobtitle}</a>
+        </td>
+        <td>
+            <a id="A3">{$T.record.logintimes}</a>
+        </td>
+  
+        <td>
+            
+                <a  id="Delete_{$T.record.userid}" onclick="DeleteCheckedItems_ＭoralResource(this.id)"><img src="../../image/del3.gif" width="9" height="9" />删除</a>
+               <a onclick="SendCheckedItems_AdminResource(this.id)" id="Send_{$T.record.fileID}"><img src="../../image/onebit_27.png" width="9" height="9" />推送</a>
+           
+        </td>
+    </tr>
+    {#else} {#/if} {#/for}
+</table>
+

@@ -1,0 +1,208 @@
+@charset "utf-8";
+.indexTop {
+	width: 1024px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+	padding-top: 15px;
+}
+.indexTop .logoInfo {
+	float: left;
+}
+.indexTop .searchArea {
+	float: left;
+	margin-left: 60px;
+}
+.indexTop .searchArea .docs {
+	width: 400px;
+	overflow: hidden;
+}
+.indexTop .searchArea .docs li {
+	float: left;
+	margin-right: 4px;
+	margin-left: 4px;
+	border: 1px solid #FFF;
+	padding: 4px;
+}
+.indexTop .searchArea .docs .current {
+	border: 1px solid #FF9900;
+	background-image: url(/ImagesN/ResourcesDetail_47_2.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+.indexTop .searchArea .searchForm {
+	clear: both;
+	margin-top: 4px;
+}
+.indexTop .searchArea .searchForm {
+	border: 1px solid #CCC;
+	background-color: #F9F9F9;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	overflow: hidden;
+
+}
+.indexTop .searchArea .searchForm #searchWord {
+	float: left;
+	height: 28px;
+	border: 1px solid #F9F9F9;
+	background-color: #F9F9F9;
+	margin-top: 3px;
+	width: 345px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.indexTop .searchArea .searchForm #searchSubBT {
+	margin-top: 1px;
+	float: left;
+	cursor: pointer;
+}
+.indexTop .userInfo #userPhoto {
+	float: left;
+	height: 78px;
+	margin-top: 15px;
+}
+.indexTop .userInfo {
+	float: left;
+	width: 250px;
+	padding-left: 50px;
+}
+.indexTop .userInfo #userInfo {
+	width: 180px;
+	float: right;
+	padding-top: 15px;
+}
+.indexTop .userInfo #userInfo #userName {
+	font-family: "微软雅黑";
+	font-size: 18px;
+}
+.indexTop .userInfo #userInfo #regAct {
+	color: #999;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+.indexTop .userInfo #userInfo #userAction {
+	line-height: 30px;
+}
+.indexTop .mainMenu {
+	clear: both;
+	line-height: 58px;
+	background:url(/imagesN/index_01.jpg) repeat-x;
+
+	padding-left: 100px;
+	overflow: hidden;
+	border-bottom:3px solid #6ca144;
+	margin-top: 10px;
+	height: 58px;
+}
+.topIndex
+{
+background:url(/ImagesN/Index_35.jpg) repeat-x;
+    }
+    
+.topIndexCurrent
+{
+background:url(/ImagesN/Index_35_active.jpg) repeat-x;
+    }
+    
+    .topTeach
+{
+background:url(/ImagesN/Index_35_1.jpg) repeat-x;
+    }
+    
+.topTeachCurrent
+{
+background:url(/ImagesN/Index_35_1_actvie.jpg) repeat-x;
+    }
+       .topMoral
+{
+background:url(/ImagesN/Index_34.jpg) repeat-x;
+    }
+           .topdisk
+{
+background:url(/ImagesN/Index_47.jpg) repeat-x;
+    }
+    
+.topMoralCurrent
+{
+background:url(/ImagesN/Index_34_active.jpg) repeat-x;
+    }
+           .topadmin
+{
+background:url(/ImagesN/Index_44.jpg) repeat-x;
+    }
+    
+.topadminCurrent
+{
+background:url(/ImagesN/Index_44_active.jpg) repeat-x;
+    }
+.indexTop .mainMenu li {
+	float: left;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	color: #FFF;
+}
+.indexTop .mainMenu li a {
+	color: #F9F9F9;
+}
+.indexTop .mainMenu li {
+}
+.indexTop .mainMenu li a img {
+	margin-left: 5px;
+}
+
+    .bottom {
+	clear: both;
+	margin-top: 10px;
+	padding: 10px;
+	width: 1004px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+	background-color: #333;
+}
+    .bottom .userhelp {
+width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+.bottom .userhelp a
+{
+    color:White;
+    }
+    .bottom .userhelp li {
+	float: left;
+	width: 200px;
+	font-size: 16px;
+	line-height: 25px;
+	font-family: "微软雅黑";
+	text-align: center;
+	
+}
+
+    .bottom .copyright {
+	line-height: 30px;
+	color: #fff;
+	overflow: hidden;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: "微软雅黑";
+width: 700px;
+}
+    .bottom .userhelp li a {
+	color: #F5F5F5;
+	font-size:14px;
+}
+    .bottom .userhelp li a:hover {
+		text-decoration:underline;
+}
+    .bottom .copyright #address {
+	float: left;
+}
+    .bottom .copyright .connectUs {
+	float: left;
+    margin-left:20px;
+}

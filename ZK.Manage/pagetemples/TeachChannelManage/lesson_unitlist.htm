@@ -1,0 +1,6 @@
+﻿<select id="select_unit" style="width: 153px">
+    <option id="lessonGrade_null">请选择</option>
+    {#foreach $T as record}
+    <option id="lessonUnit_{$T.record.lessonID}">{$T.record.lessonName}</option>
+    {#/for}
+</select>

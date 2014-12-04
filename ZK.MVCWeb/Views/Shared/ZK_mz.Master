@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ZK_mz.master.cs" Inherits="ZK.MVCWeb.Views.Shared.ZK_mz" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>
+        <%=ZK.Controllers.ZKAuthAttributeFilter.getTitle() %><asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+    </title>
+    <script type="text/javascript" src="/Scripts/jquery-1.7.2.min.js"></script>
+<link href="/CSS/mz/comment.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<div class="indexpage">
+  <div class="indexheader">
+     <div class="search">
+                 <%if (Session["uid"] != null)
+                  {%>
+                <span id="userName">欢迎您，<%=((ZK.Model.USERS)(Session["user"])).USERNAME%></span>
+                <div id="userAction">
+                <a href="/DiskN/CheckUser?username=<%=((ZK.Model.USERS)(Session["user"])).USERNAME %>">我的网盘</a>&nbsp;|&nbsp;<a href="/account/logout">退出</a></div>
+                <%}%>
+     </div>
+  </div>
+  
+  <div class="indexlink">
+      <div class="linkcont">
+         <ul>
+            <li><a href="index.html" class="dangqian">知识首页</a></li>
+            <li><a href="jiaoxue.html">教学资源</a></li>
+            <li><a href="deyu.html">德育资源</a></li>
+            <li><a href="xingzheng.html">行政资源</a></li>
+            <li><a href="gugan.html">骨干教师</a></li>
+            <li><a href="yibanyizu.html">一班一足</a></li>
+            <li><a href="#">我的网盘</a></li>
+         </ul>
+      </div>
+  </div>
+  
+    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+    </asp:ContentPlaceHolder>
+  
+  <div class="indexfooter">
+     <p>版权所有@北京皓联教育科技有限公司<br />联系电话：010-67867798 1389675213456</p>
+  </div>
+  
+</div>
+</body>
+</html>

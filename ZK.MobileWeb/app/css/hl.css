@@ -1,0 +1,148 @@
+/**
+ *
+ * Pull down styles
+ *
+ */
+.triangle-border {
+	position: relative;
+	padding: 15px;
+	margin: 1em 0 3em;
+	
+	color: #333;
+	
+	/* css3 */
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.triangle-border.left {
+	background: #dddddd;
+	border: 5px solid #dddddd;
+	margin-left: 30px;
+}
+.triangle-border.right {
+	background: #abd548;
+	border: 5px solid #abd548;
+	margin-right: 30px;
+}
+.triangle-border:before {
+	content: "";
+	position: absolute;
+	bottom: -20px; /* value = - border-top-width - border-bottom-width */
+	left: 40px; /* controls horizontal position */
+	border-width: 20px 20px 0;
+	border-style: solid;
+	border-color: #5a8f00 transparent;
+	display: block;
+	width: 0;
+}
+/* creates the smaller  triangle */
+.triangle-border:after {
+	content: "";
+	position: absolute;
+	bottom: -13px; /* value = - border-top-width - border-bottom-width */
+	left: 47px;
+	border-width: 13px 13px 0;
+	border-style: solid;
+	border-color: #fff transparent;
+	display: block;
+	width: 0;
+}
+.triangle-border.top:before {
+	top: -20px; /* value = - border-top-width - border-bottom-width */
+	bottom: auto;
+	left: auto;
+	right: 40px; /* controls horizontal position */
+	border-width: 0 20px 20px;
+}
+/* creates the smaller  triangle */
+.triangle-border.top:after {
+	top: -13px; /* value = - border-top-width - border-bottom-width */
+	bottom: auto;
+	left: auto;
+	right: 47px; /* value = (:before right) + (:before border-right) - (:after border-right) */
+	border-width: 0 13px 13px;
+}
+.triangle-border.left:before {
+	top: 10px; /* controls vertical position */
+	bottom: auto;
+	left: -30px; /* value = - border-left-width - border-right-width */
+	border-width: 15px 30px 15px 0;
+	border-color: transparent #dddddd;
+}
+/* creates the smaller  triangle */
+.triangle-border.left:after {
+	top: 16px; /* value = (:before top) + (:before border-top) - (:after border-top) */
+	bottom: auto;
+	left: -21px; /* value = - border-left-width - border-right-width */
+	border-width: 9px 21px 9px 0;
+	border-color: transparent #dddddd;
+}
+/* creates the larger triangle */
+.triangle-border.right:before {
+	top: 10px; /* controls vertical position */
+	bottom: auto;
+	left: auto;
+	right: -30px; /* value = - border-left-width - border-right-width */
+	border-width: 15px 0 15px 30px;
+	border-color: transparent #abd548;
+}
+/* creates the smaller  triangle */
+.triangle-border.right:after {
+	top: 16px; /* value = (:before top) + (:before border-top) - (:after border-top) */
+	bottom: auto;
+	left: auto;
+	right: -21px; /* value = - border-left-width - border-right-width */
+	border-width: 9px 0 9px 21px;
+	border-color: transparent #abd548;
+}
+#pullDown, #pullUp {
+	background: #fff;
+	height: 40px;
+	line-height: 40px;
+	padding: 5px 10px;
+	border-bottom: 1px solid #ccc;
+	font-weight: bold;
+	font-size: 14px;
+	color: #888;
+}
+#pullDown .pullDownIcon, #pullUp .pullUpIcon {
+	display: block;
+	float: left;
+	width: 40px;
+	height: 40px;
+	background: url(pull-icon@2x.png) 0 0 no-repeat;
+	-webkit-background-size: 40px 80px;
+	background-size: 40px 80px;
+	-webkit-transition-property: -webkit-transform;
+	-webkit-transition-duration: 250ms;
+}
+#pullDown .pullDownIcon {
+	-webkit-transform: rotate(0deg) translateZ(0);
+}
+#pullUp .pullUpIcon {
+	-webkit-transform: rotate(-180deg) translateZ(0);
+}
+#pullDown.flip .pullDownIcon {
+	-webkit-transform: rotate(-180deg) translateZ(0);
+}
+#pullUp.flip .pullUpIcon {
+	-webkit-transform: rotate(0deg) translateZ(0);
+}
+#pullDown.loading .pullDownIcon, #pullUp.loading .pullUpIcon {
+	background-position: 0 100%;
+	-webkit-transform: rotate(0deg) translateZ(0);
+	-webkit-transition-duration: 0ms;
+	-webkit-animation-name: loading;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes loading {
+from {
+	-webkit-transform: rotate(0deg) translateZ(0);
+}
+to {
+	-webkit-transform: rotate(360deg) translateZ(0);
+}
+}

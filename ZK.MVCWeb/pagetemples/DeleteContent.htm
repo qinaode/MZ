@@ -1,0 +1,39 @@
+﻿<div style="width: 100%; height: 100%;">
+    <ul style="list-style-type: none;" class="hidemenu">
+        {#foreach $T as record} {#if $T.record.file_type=='1'}
+        <li style="margin-left: 10px; cursor: pointer;" id="div1_{$T.record.id }">
+            <div style="width: 120px; height: 140px; float: left; margin-left: 10px; margin-bottom: 10px;"
+                align="center" class="div_fileinfo directory" id="div2_{$T.record.id }">
+                <!-- 用来记录文件的类型 文件 或 文件夹 -->
+                <input type="hidden" id="hidtype_{$T.record.id }" value="{$T.record.file_type}" />
+                <a class="two aContent" title="{$T.record.file_name }" name="aContent" id="a_{$T.record.id }">
+                    <img src="{$T.record.file_path}" border="0" align="absmiddle" /><br />
+                    <p id="afn_{$T.record.id }">
+                        {$T.record.file_name}</p>
+                </a>
+            </div>
+        </li>
+        {#else}
+        <li style="margin-left: 10px; cursor: pointer;" id="div1_{$T.record.id }">
+            <div style="width: 120px; height: 140px; float: left; margin-left: 10px; margin-bottom: 10px;"
+                align="center" class="div_fileinfo file" id="div2_{$T.record.id }">
+                <!-- 用来记录文件的类型 文件 或 文件夹 -->
+                <input type="hidden" id="hidtype_{$T.record.id }" value="{$T.record.file_type}" />
+                <a class="two aContent" title="{$T.record.file_name }" name="aContent" id="a_{$T.record.id }">
+                    <img src="{$T.record.file_path}" border="0" align="absmiddle" /><br />
+                    <p id="afn_{$T.record.id }">
+                        {$T.record.file_name}</p>
+                </a>
+            </div>
+        </li>
+        {#/if} {#/for}
+    </ul>
+    <ul id="menu" style="display: none; position: absolute; top: 100px; left: 100px;">
+        <li><a href="javascript:void(0);" onclick="RevertFile()"><span class="ui-icon ui-icon-disk">
+        </span>还原</a></li>
+        <li><a href="javascript:void(0);" onclick="DeleteFileInfo('one')"><span class="ui-icon ui-icon-disk">
+        </span>删除</a></li>
+        <li><a href="javascript:void(0);" onclick="DeleteFileInfo('all')"><span class="ui-icon ui-icon-print">
+        </span>清空</a></li>
+    </ul>
+</div>

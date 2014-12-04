@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B57DD613-F326-46F6-8642-8334A6AD4663}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZK.Dal</RootNamespace>
+    <AssemblyName>ZK.Dal</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\dll\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACCOUNTS.cs" />
+    <Compile Include="ACCOUNTSECTIONS.cs" />
+    <Compile Include="ADMINLOGS.cs" />
+    <Compile Include="ADMINS.cs" />
+    <Compile Include="CommondBase.cs" />
+    <Compile Include="CONTACTGROUPS.cs" />
+    <Compile Include="CONTACTS.cs" />
+    <Compile Include="DEPARTMENTS.cs" />
+    <Compile Include="DEPARTUSERS.cs" />
+    <Compile Include="file_base.cs" />
+    <Compile Include="file_collection.cs" />
+    <Compile Include="GROUPMEMBERS.cs" />
+    <Compile Include="GROUPS.cs" />
+    <Compile Include="GROUPSHAREFILES.cs" />
+    <Compile Include="JOINGROUPREQUESTS.cs" />
+    <Compile Include="JOINGROUPRESPONSES.cs" />
+    <Compile Include="JOINREQUESTS.cs" />
+    <Compile Include="JOINRESPONSES.cs" />
+    <Compile Include="miniyun_events.cs" />
+    <Compile Include="miniyun_files.cs" />
+    <Compile Include="miniyun_file_exifs.cs" />
+    <Compile Include="miniyun_file_metas.cs" />
+    <Compile Include="miniyun_file_star.cs" />
+    <Compile Include="miniyun_file_tags.cs" />
+    <Compile Include="miniyun_file_versions.cs" />
+    <Compile Include="miniyun_file_version_metas.cs" />
+    <Compile Include="miniyun_options.cs" />
+    <Compile Include="miniyun_share_files.cs" />
+    <Compile Include="miniyun_tags.cs" />
+    <Compile Include="miniyun_users.cs" />
+    <Compile Include="miniyun_user_metas.cs" />
+    <Compile Include="miniyun_user_privilege.cs" />
+    <Compile Include="OFFGROUPMSGS.cs" />
+    <Compile Include="OFFGROUPSUPEROBJS.cs" />
+    <Compile Include="OFFLINEFILES.cs" />
+    <Compile Include="OFFLINEMESSAGES.cs" />
+    <Compile Include="OFFLINESUPEROBJECTS.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="public_files.cs" />
+    <Compile Include="PWDPROTECTION.cs" />
+    <Compile Include="RECENTITEMS.cs" />
+    <Compile Include="sysdiagrams.cs" />
+    <Compile Include="SYSMSGS.cs" />
+    <Compile Include="USERS.cs" />
+    <Compile Include="View_AllFileList.cs" />
+    <Compile Include="View_OtherFileList.cs" />
+    <Compile Include="View_TeachFileList.cs" />
+    <Compile Include="View_UserMessage.cs" />
+    <Compile Include="WEBAPPS.cs" />
+    <Compile Include="WEBVISITORMESSAGES.cs" />
+    <Compile Include="WEBVISITORS.cs" />
+    <Compile Include="WEBVISITORTOTAL.cs" />
+    <Compile Include="ZK_Channel.cs" />
+    <Compile Include="ZK_ChannelGroup.cs" />
+    <Compile Include="ZK_ChannelGroupAndFileList.cs" />
+    <Compile Include="ZK_Course.cs" />
+    <Compile Include="ZK_Edition.cs" />
+    <Compile Include="ZK_FileAndTags.cs" />
+    <Compile Include="ZK_FileExtend.cs" />
+    <Compile Include="ZK_FileJP.cs" />
+    <Compile Include="ZK_FileJPPic.cs" />
+    <Compile Include="ZK_FileJPType.cs" />
+    <Compile Include="ZK_FileList.cs" />
+    <Compile Include="ZK_FileListTra.cs" />
+    <Compile Include="ZK_FileType.cs" />
+    <Compile Include="ZK_FileVisitors.cs" />
+    <Compile Include="ZK_Grade.cs" />
+    <Compile Include="ZK_JXCategory.cs" />
+    <Compile Include="ZK_Lesson.cs" />
+    <Compile Include="ZK_LessonAndFileList.cs" />
+    <Compile Include="ZK_LessonClass.cs" />
+    <Compile Include="ZK_NT_MsgExtent.cs" />
+    <Compile Include="ZK_RoleList.cs" />
+    <Compile Include="ZK_RoleToUser.cs" />
+    <Compile Include="ZK_Tags.cs" />
+    <Compile Include="ZK_UserAndSysMsg.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZK.Common\ZK.Common.csproj">
+      <Project>{E3D8759A-C5EB-402D-9F10-F5C6029A8D1A}</Project>
+      <Name>ZK.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZK.DBUtility\ZK.DBUtility.csproj">
+      <Project>{0988C62E-247F-471F-A183-DB509C7A3839}</Project>
+      <Name>ZK.DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZK.IDAL\ZK.IDAL.csproj">
+      <Project>{AA6FBAE5-8392-48F4-AE85-879C905FAE5A}</Project>
+      <Name>ZK.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZK.Model\ZK.Model.csproj">
+      <Project>{EF2909E8-3750-4324-B768-CC8A72151262}</Project>
+      <Name>ZK.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

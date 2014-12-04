@@ -1,0 +1,57 @@
+.content {
+	padding: 5px;
+	overflow: hidden;
+	min-width:1000px;
+	font-family: "微软雅黑";
+}
+.content .pagePath {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #7CCF8F;
+	line-height: 30px;
+	text-indent: 15px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	background-color: #ECF5FA;
+}
+.dtree {
+	//font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666;
+	white-space: nowrap;
+}
+.dtree img {
+	border: 0px;
+	vertical-align: middle;
+}
+.dtree a {
+	color: #333;
+	text-decoration: none;
+}
+.dtree a.node, .dtree a.nodeSel {
+	white-space: nowrap;
+	padding: 1px 2px 1px 2px;
+}
+.dtree a.node:hover, .dtree a.nodeSel:hover {
+	color: #333;
+	text-decoration: underline;
+}
+.dtree a.nodeSel {
+	background-color: #c0d2ec;
+}
+.dtree .clip {
+	overflow: hidden;
+	width:100%;
+}
+.dtree .dTreeNode {
+	border-bottom-width: 1px;
+	border-bottom-style:solid;
+	border-bottom-color: #D0D6EC;
+	clear:both;
+	overflow:hidden;
+  height:30px;
+  line-height:30px;
+}	
+.dtree .dTreeNode:hover{
+	background-color: #F8F7EF;
+}

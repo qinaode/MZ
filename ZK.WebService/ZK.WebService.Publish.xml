@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="E:\Severcode\发布网站\Interface" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="配置文件1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="07/23/2014 16:45:22" />
+    <file relUrl="bin/Microsoft.Office.Interop.Excel.xml" publishTime="03/03/2010 21:11:36" />
+    <file relUrl="bin/ZK.IDAL.pdb" publishTime="07/23/2014 16:45:00" />
+    <file relUrl="bin/ZK.WebService.dll" publishTime="07/23/2014 16:45:04" />
+    <file relUrl="bin/Microsoft.Office.Interop.Excel.dll" publishTime="03/03/2010 20:07:10" />
+    <file relUrl="bin/ZK.DBUtility.dll" publishTime="07/23/2014 16:45:01" />
+    <file relUrl="bin/ZK.Common.dll" publishTime="07/23/2014 16:45:00" />
+    <file relUrl="bin/Microsoft.Office.Interop.Word.xml" publishTime="03/03/2010 21:11:36" />
+    <file relUrl="bin/ZK.DBUtility.pdb" publishTime="07/23/2014 16:45:01" />
+    <file relUrl="bin/Microsoft.Office.Interop.PowerPoint.dll" publishTime="03/03/2010 20:07:10" />
+    <file relUrl="bin/ZK.DALFactory.dll" publishTime="07/23/2014 16:45:02" />
+    <file relUrl="ToHtml.asmx" publishTime="03/26/2014 09:04:05" />
+    <file relUrl="bin/ZK.Model.dll" publishTime="07/23/2014 16:45:00" />
+    <file relUrl="bin/ZK.DALFactory.pdb" publishTime="07/23/2014 16:45:02" />
+    <file relUrl="bin/ZK.WebService.pdb" publishTime="07/23/2014 16:45:04" />
+    <file relUrl="SendMessage.asmx" publishTime="07/18/2014 09:34:31" />
+    <file relUrl="bin/ZK.BLL.pdb" publishTime="07/23/2014 16:45:02" />
+    <file relUrl="bin/ZK.Model.pdb" publishTime="07/23/2014 16:44:59" />
+    <file relUrl="bin/MySql.Data.dll" publishTime="05/15/2014 13:13:47" />
+    <file relUrl="bin/ZK.Dal.pdb" publishTime="07/23/2014 16:45:02" />
+    <file relUrl="bin/ZK.IDAL.dll" publishTime="07/23/2014 16:45:01" />
+    <file relUrl="bin/ICSharpCode.SharpZipLib.dll" publishTime="05/15/2014 13:13:47" />
+    <file relUrl="bin/ZK.BLL.dll" publishTime="07/23/2014 16:45:02" />
+    <file relUrl="bin/Microsoft.Office.Interop.Word.dll" publishTime="03/03/2010 20:07:10" />
+    <file relUrl="bin/ZK.Dal.dll" publishTime="07/23/2014 16:45:02" />
+    <file relUrl="bin/ZK.Common.pdb" publishTime="07/23/2014 16:45:00" />
+  </publishProfile>
+</publishData>

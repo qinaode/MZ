@@ -1,0 +1,25 @@
+/* CSS Document */
+
+
+/*---------------------------------
+ *  loginpage
+ *---------------------------------*/
+.loginpage{ width:100%; text-align:center; background:url(/images/mz/login_bg.jpg) repeat-x;}
+.loginheader{ width:100%; height:1px; background:url(/images/mz/login_header.png) top no-repeat;}
+.logincontent{ width:1350px; margin:0 auto; text-align:center; height:650px; background:url(/images/mz/content_bg.png) top no-repeat;}
+.logincont{ position:relative; top:350px; width:510px; margin:0 auto; text-align:right; height:279px; 
+background:url(/images/mz/login_k_bg.png) center no-repeat; font-size:16px; color:#000000;
+    left: 0px;
+}
+.logincont ul{ padding:30px 50px;}
+.logincont ul li{ padding:10px 0;}
+.logincont ul li #textbox{ width:324px; height:36px; background:url(/images/mz/textbox_bg.png) no-repeat; padding:8px 5px; color:#7d7d7d;}
+.logincont ul li .txtbox{ width:324px; height:36px; background:url(/images/mz/textbox_bg.png) no-repeat; padding:8px 5px; color:#7d7d7d;}
+.logincont ul li.login_button{ text-align:center;}
+.logincont ul li.login_button input{ text-align:center;display:block; padding:5px; font-size:14pt; background:url(/images/mz/login_button.png) no-repeat; color:#ffffff;}
+.logincont ul li.login_button a{ display:block; padding:20px; background:url(/images/mz/login_button.png) no-repeat; color:#ffffff;}
+.logincont ul li.login_button a:active{ display:block; padding:20px; background:url(/images/mz/login_button_active.png) no-repeat; color:#ffffff;}
+.loginfooter{ width:100%; background:url('/images/mz/login_footer.png') no-repeat center top;
+    height: 50px;
+}
+.loginfooter p{ padding-top:55px; padding-bottom:10px; font-size:14px; color:#494949;}

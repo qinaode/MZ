@@ -1,0 +1,14 @@
+﻿body 
+{
+    background-color: #F9FCFD;
+}
+
+.searchform {
+	line-height: 30px;
+	
+	margin-top: 2px;
+	border-bottom-width: 1px;
+	border-bottom-color: #7CCF8F;
+	font-family: "微软雅黑";
+	font-size: 9px;
+}

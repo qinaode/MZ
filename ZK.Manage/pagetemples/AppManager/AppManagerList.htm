@@ -1,0 +1,66 @@
+﻿<table width="100%" class="tableform text-center" border="0" cellspacing="0">
+     <tr class="userList" align="left">
+                <td style="width: 65px;">
+                    &nbsp;
+                </td>
+                <td style="display: none;">
+                    id
+                </td>
+                <td>
+                    应用名称&应用URL
+                </td>
+                <td>
+                    应用分类
+                </td>
+                <td>
+                    浏览器
+                </td>
+                <td>
+                    快捷方式
+                </td>
+                <td>
+                    操作
+                </td>
+            </tr>
+    {#foreach $T as record} {#if '1'=='1'}
+    <tr align="left" class="nodeList" style="hover: background-color: #F8F7EF;">
+                  <td style="width: 65px;">                         
+                      <img src='../AppImg/{$T.record.APPIMAGE}' width="40px" height="40px" />
+                </td>
+              <td style="display: none;">
+                     <a id="lbAPPID_{$T.record.APPID}"">{$T.record.APPID}</a>
+              </td>
+        <td>
+            <a id="lbAPPNAME_{$T.record.APPID}">{$T.record.APPNAME}</a>
+              <br />
+            <a id="lbAPPURL_{$T.record.APPID}">{$T.record.APPURL}</a>
+        </td>
+        
+        <td>
+            <a id="lbCATEGORY_{$T.record.APPID}">{$T.record.CATEGORY}</a>
+        </td>
+        <td>
+            <a id="lbCLIENTWEBBROWSER_{$T.record.APPID}">{$T.record.CLIENTWEBBROWSER}</a>
+        </td>
+        <td>
+            <a id="lbSHORTCUT_{$T.record.APPID}">{$T.record.SHORTCUT}</a>
+        </td>
+        
+        <td>
+            <!--<input type="button" value="删除" onclick="DeleteCheckedItems_ＭoralResource(this.id)"
+                id="Delete_{$T.record.fileID}" />-->
+                <a  id="{$T.record.APPID}" onclick="Move(this.id,'Up');"><img src="../../image/up2.gif"  width="9" height="9" />上移</a>
+                <a  id="{$T.record.APPID}" onclick="Move(this.id,'Down');"><img src="../../image/down.gif"  width="9" height="9" />下移</a>
+
+                <a id="{$T.record.APPID}" onclick="noticeIconEdit(this.id);">
+                                    <img src="../../image/image.gif"  width="9" height="9"  />修改图标</a> 
+                                    <a id="{$T.record.APPID}" onclick="noticeMagEdit(this.id);">
+                                          <img src="../../image/mof.gif"  width="9" height="9"  />修改</a>
+
+                <a  id="{$T.record.APPID}" onclick="DeleteCheckedItems(this.id,'Del')"><img src="../../image/del3.gif" width="9" height="9" />删除</a>
+               
+           
+        </td>
+    </tr>
+    {#else} {#/if} {#/for}
+</table>

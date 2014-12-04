@@ -1,0 +1,34 @@
+﻿<table width="100%" class="tableform text-center" border="0" cellspacing="0">
+    <tr align="left" class="userList">
+        <td>
+           选择
+        </td>
+        <td>
+            教材名称
+        </td>
+        <td>
+            教材描述
+        </td>
+        <td>
+            操作
+        </td>
+    </tr>
+    {#foreach $T as record}
+    <tr align="left" class="Teach_Element nodeList">
+        <td>
+            <input type="checkbox" name="checkbox_1" id="{$T.record.courseID}" onclick="CheckOne()"/>
+        </td>
+        <td>
+            <a id="lab_{$T.record.courseID}">{$T.record.courseName}</a>
+        </td>
+        <td>
+            <a id="lab_2{$T.record.courseID}">{$T.record.courseDesc}</a>
+        </td>
+        <td>
+            <!--<input type="button" value="修改" onclick="UpdateThisItem_Course(this.id)" id="Update_{$T.record.courseID}" />-->
+            <a onclick="UpdateThisItem_Course(this.id)" id="Update_{$T.record.courseID}"><img src="../image/mof.gif" width="11" height="10" />修改</a>
+            <a onclick="DeleteThisItem_Course(this.id)" id="Delete_{$T.record.courseID}"><img src="../image/del3.gif" width="9" height="9" />删除</a>
+        </td>
+    </tr>
+    {#/for}
+</table>

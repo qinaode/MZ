@@ -1,0 +1,58 @@
+.content {
+	padding: 5px;
+	overflow: hidden;
+	min-width:1000px;
+}
+.content .pagePath {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #7CCF8F;
+	line-height: 30px;
+	text-indent: 15px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	background-color: #ECF5FA;
+}
+.brandl dd {
+	float: left;
+	margin: 3px;
+	padding: 3px;
+}
+.brandl {
+	clear: both;
+	overflow: hidden;
+}
+.brandl dt {
+	font-size: 14px;
+	font-weight: bold;
+	text-indent: 10px;
+	line-height: 20px;
+}
+.pageInfo {
+	overflow: hidden;
+	padding: 4px;
+	margin-top: 2px;
+	background-color: #F9FCFD;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #7ACB8C;
+}.content .pageInfo .fr #pno {
+	line-height: 30px;
+	padding-right: 5px;
+	padding-left: 5px;
+	border: 1px solid #CCC;
+	margin-right: 8px;
+}
+.content .pageInfo .fr a .addbt {
+	float: left;
+	line-height: 24px;
+}
+.content .pageInfo .addb a .addbt {
+	float: left;
+	line-height: 23px;
+	padding-left: 3px;
+}
+.content .pageInfo .addb {
+	float: right;
+	width: 150px;
+}

@@ -1,0 +1,264 @@
+.content {
+	padding: 5px;
+	overflow: hidden;
+	min-width:1000px;
+}
+.content .pagePath {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #7CCF8F;
+	line-height: 30px;
+	text-indent: 15px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	background-color: #ECF5FA;
+}
+.content .productDetail .pBasicInfo dt {
+	font-size: 14px;
+	font-weight: bold;
+	padding: 5px;
+	background-color: #F3F9FC;
+}
+.content .productDetail {
+	padding: 10px;
+}
+.content .productDetail .abtTit {
+	line-height: 26px;
+	float: left;
+	width: 120px;
+	text-align: right;
+	padding: 2px;
+	margin: 2px;
+}
+.content .productDetail  .abtValue {
+	float: left;
+	margin: 2px;
+	padding: 2px;
+	line-height: 26px;
+	overflow: hidden;
+}
+.content .productDetail .pBasicInfo dd {
+	clear: both;
+}
+.content .productDetail  .abtValue .ipt {
+	line-height: 25px;
+	height: 22px;
+}
+.content .productDetail .pLogisticsInfo {
+	clear: both;
+	background-color: #F5F5F5;
+	overflow: hidden;
+	padding: 5px;
+}
+.colorS {
+	height: 16px;
+	width: 16px;
+	float: left;
+	margin-top: 4px;
+	line-height: 20px;
+	border: 1px solid #D3DAED;
+}
+.content .productDetail .pBasicInfo dd .abtValue .colorLi li .colorselect {
+	float: left;
+	margin-top: 3px;
+}
+.c1 {
+	background-color: #F00;
+}
+.c2 {
+	background-color:#090;
+}
+.c3 {
+	background-color: #900;
+}
+.c4 {
+	background-color:#9C6;
+}
+.c5 {
+	background-color: #C93;
+}
+.c6 {
+	background-color:#60F;
+}
+.c7 {
+	background-color: #FCF;
+}
+.c8 {
+	background-color:#FF0;
+}
+.c9 {
+	background-color: #3CF;
+}
+.c10 {
+	background-color:#39F;
+}
+.c11{
+	background-color: #FFF;
+}
+.c12 {
+	background-color:#000;
+}
+.c13 {
+	background-color: #00F;
+}
+.c14 {
+	background-color:#90F;
+}
+.c15 {
+	background-color: #F0F;
+}
+.content .productDetail .pBasicInfo dd .abtValue .colorLi li {
+	list-style-type: none;
+	line-height: 20px;
+	float: left;
+}
+.content .productDetail .pBasicInfo dd .abtValue .rule {
+	width: 600px;
+}
+.content .productDetail .pBasicInfo dd .abtValue .ppicli li 
+{
+    margin-left:5px;
+	text-align: center;
+	height: 122px;
+	width:119px;
+	border: 1px solid #C9D2C8;
+	position:relative;
+	float: left;
+}
+.content .productDetail .pBasicInfo dd .abtValue .ppicli li .uploadPic {
+    bottom: 0px;
+	position:absolute;
+	left:5px;
+	filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+	width:50px;
+	
+}
+.content .productDetail .pBasicInfo dd .abtValue .ppicli li .delPic {
+    bottom: 0px;
+	position:absolute;
+	right:5px;
+	filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+	width:50px;
+	
+}
+
+.content .productDetail .pLogisticsInfo dt {
+	font-size: 14px;
+	font-weight: bold;
+}
+.content .productDetail .pServiceInfo {
+	clear: both;
+}
+.content .productDetail .pLogisticsInfo dd {
+	clear: both;
+}
+.content .productDetail .pLogisticsInfo dd .abtValue .postprice {
+	padding: 2px;
+	background-color: #F0F1E7;
+	border: 1px solid #C9D2C8;
+}
+.content .productDetail .pServiceInfo dt {
+	font-size: 14px;
+	font-weight: bold;
+}
+.content .productDetail .pOthInfo {
+	clear: both;
+	background-color: #F5F5F5;
+	overflow: hidden;
+	padding: 5px;
+}
+.content .productDetail .pServiceInfo dd {
+	clear: both;
+}
+.content .productDetail .pOthInfo dd {
+	clear: both;
+}
+.content .productDetail .pOthInfo dt {
+	font-size: 14px;
+	font-weight: bold;
+}
+.content .productDetail .op {
+	clear: both;
+	text-align: center;
+	padding: 10px;
+}
+.content .productDetail .op .ipt {
+	width: 80px;
+	height: 30px;
+	margin: 5px;
+}
+#imageTrTit{
+	display:none;
+}
+.content .productDetail .pBasicInfo dd .abtValue .ppicli {
+	float: left;
+	width: 670px;
+}
+.content .productDetail .pBasicInfo {
+	border-left:1px solid #F3F9FC;
+	border-right:1px solid #F3F9FC;
+	border-bottom:1px solid #F3F9FC;
+
+}
+
+.uploadifyQueueItem {
+	position: relative;
+	float: left;
+	margin-right: 8px;
+	
+	background-color: #F5F5F5;
+	border: 1px solid #E5E5E5;
+	font: 11px Verdana, Geneva, sans-serif;
+	margin-top: 5px;
+	padding: 10px;
+	width: 150px;
+}
+.uploadifyQueueItem .cancel {
+	position: absolute;
+	right: 3px;
+	top: 3px;
+}
+#uploadifyUploader {
+	float: left;
+	margin-top: 40px;
+}
+.uploadifyQueue {
+	float:left;
+	}
+.uploadify{
+	float:left;
+	}
+.uploadifyQueue .completed {
+	background-color: #E5E5E5;
+}
+.uploadifyProgress {
+	background-color: #E5E5E5;
+	margin-top: 10px;
+	width: 100%;
+}
+.uploadifyProgressBar {
+	background-color: #0099FF;
+	height: 3px;
+	width: 1px;
+}
+.uploadifyError {
+	background-color: #FDE5DD !important;
+	border: 2px solid #FBCBBC !important;
+}
+.displayNone
+{
+    display:none;
+    }
+.opDisc
+{
+    width:60px;
+    float:left;
+    margin-right:5px;
+    text-align:center;
+    }    

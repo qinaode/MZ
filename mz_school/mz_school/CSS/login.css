@@ -1,0 +1,18 @@
+/* CSS Document */
+
+
+/*---------------------------------
+ *  loginpage
+ *---------------------------------*/
+.loginpage{ width:100%; text-align:center; background:url(../images/login_bg.jpg) repeat-x;}
+.loginheader{ width:100%; height:110px; background:url(../images/login_header.png) top no-repeat;}
+.logincontent{ width:1350px; margin:0 auto; text-align:center; height:650px; background:url(../images/content_bg.png) top no-repeat;}
+.logincont{ position:relative; top:350px; width:510px; margin:0 auto; text-align:right; height:300px; background:url(../images/login_k_bg.png) center no-repeat; font-size:16px; color:#000000;}
+.logincont ul{ padding:30px 50px;}
+.logincont ul li{ padding:10px 0;}
+.logincont ul li #textbox{ width:324px; height:36px; background:url(../images/textbox_bg.png) no-repeat; padding:8px 5px; color:#7d7d7d;}
+.logincont ul li.login_button{ text-align:center;}
+.logincont ul li.login_button a{ display:block; padding:20px; background:url(../images/login_button.png) no-repeat; color:#ffffff;}
+.logincont ul li.login_button a:active{ display:block; padding:20px; background:url(../images/login_button_active.png) no-repeat; color:#ffffff;}
+.loginfooter{ width:100%; background:url(../images/login_footer.png) top center no-repeat;}
+.loginfooter p{ padding-top:55px; padding-bottom:10px; font-size:14px; color:#494949;}

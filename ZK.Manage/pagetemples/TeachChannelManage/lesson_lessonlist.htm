@@ -1,0 +1,75 @@
+﻿<table width="100%" class="tableform text-center" border="0" cellspacing="0">
+    <tr align="left">
+        <td>
+            <input type="checkbox" value="全选" id="check_CheckAll" />&nbsp; &nbsp;<a id="a_CheckAll"
+                onclick="CheckAll()">全选 </a>
+        </td>
+        <td>
+            名称
+        </td>
+        <td>
+            描述
+        </td>
+        <td>
+            教学目标
+        </td>
+        <td>
+            教学难点
+        </td>
+        <td>
+            教学重点
+        </td>
+        <td>
+            操作
+        </td>
+    </tr>
+    {#foreach $T as record} {#if $T.record.lessonParent=='-1'}
+    <tr align="left"  class="Teach_Element">
+        <td>
+            <input type="checkbox" name="checkbox_1" id="{$T.record.lessonID}" />
+        </td>
+        <td >
+            <a id="Unit_{$T.record.lessonID}">{$T.record.lessonName}</a>
+        </td>
+        <td>
+            <a id="Unit_2{$T.record.lessonID}">{$T.record.lessonDesc}</a>
+        </td>
+        <td>
+            &nbsp;
+        </td>
+        <td>
+            &nbsp;
+        </td>
+        <td>
+            &nbsp;
+        </td>
+        <td>
+            <input type="button" value="修改" onclick="UpdateThisItem_DanYuan(this.id)" id="UpdateUnit_{$T.record.lessonID}" />
+        </td>
+    </tr>
+    {#else}
+    <tr align="left">
+        <td>
+            <input type="checkbox" name="checkbox_1" id="Checkbox1" />
+        </td>
+        <td >
+            --------<a id="lab_{$T.record.lessonID}">{$T.record.lessonName}</a>
+        </td>
+        <td>
+            <a id="lab_2{$T.record.lessonID}">{$T.record.lessonDesc}</a>
+        </td>
+        <td>
+            <a id="lab_MB{$T.record.lessonID}">{$T.record.teachMB}</a>
+        </td>
+        <td>
+            <a id="lab_ND{$T.record.lessonID}">{$T.record.teachND}</a>
+        </td>
+        <td>
+            <a id="lab_ZD{$T.record.lessonID}">{$T.record.teachZD}</a>
+        </td>
+        <td>
+            <input type="button" value="修改" onclick="UpdateThisItem_Lesson(this.id)" id="Update_{$T.record.lessonID}" />
+        </td>
+    </tr>
+    {#/if} {#/for}
+</table>

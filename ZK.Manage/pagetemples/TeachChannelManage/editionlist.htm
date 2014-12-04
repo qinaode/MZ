@@ -1,0 +1,34 @@
+﻿<table width="100%" class="tableform text-center" border="0" cellspacing="0">
+    <tr align="left" class="userList">
+        <td>
+            选择
+        </td>
+        <td>
+            版本名称
+        </td>
+        <td>
+            版本描述
+        </td>
+        <td>
+            操作
+        </td>
+    </tr>
+    {#foreach $T as record}
+    <tr align="left" class="Teach_Element nodeList">
+        <td>
+            <input type="checkbox" name="checkbox_1" id="{$T.record.editionID}" onclick="CheckOne()" />
+        </td>
+        <td>
+            <a id="lab_{$T.record.editionID}">{$T.record.editionName}</a>
+        </td>
+        <td>
+            <a id="lab_2{$T.record.editionID}">{$T.record.editionDesc}</a>
+        </td>
+        <td>
+            <!--<input type="button" value="修改" onclick="UpdateThisItem_Edition(this.id)" id="Update_{$T.record.editionID}" />-->
+            <a onclick="UpdateThisItem_Edition(this.id)" id="Update_{$T.record.editionID}"><img src="../image/mof.gif" width="11" height="10" />修改</a>
+            <a onclick="DeleteThisItem_Edition(this.id)" id="Delete_{$T.record.editionID}"><img src="../image/del3.gif" width="9" height="9" />删除</a>
+        </td>
+    </tr>
+    {#/for}
+</table>

@@ -1,0 +1,6 @@
+﻿<select id="select_course">
+    <option id="lessonCourse_null">请选择</option>
+    {#foreach $T as record}
+    <option id="lessonCourse_{$T.record.courseID}">{$T.record.courseName}</option>
+    {#/for}
+</select>
